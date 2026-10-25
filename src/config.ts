@@ -1,11 +1,11 @@
-// Edite aqui as configurações do funil.
+// Edita aquí la configuración del embudo.
 
-/** Link do botão final da página de resultado. */
+/** Enlace del botón final de la página de resultado. */
 export const CTA_URL =
-  "https://wa.me/5500000000000?text=Quero%20saber%20mais%20sobre%20o%20Loja%20no%20Celular%2045%2B";
+  "https://wa.me/5500000000000?text=Quiero%20saber%20m%C3%A1s%20sobre%20Tienda%20en%20el%20Celular%2045%2B";
 
-/** ID do Meta Pixel. Deixe vazio para desativar o pixel. */
+/** ID del Meta Pixel. Déjalo vacío para desactivar el pixel. */
 export const META_PIXEL_ID = "";
 
-/** Duração da tela "analisando suas respostas" (ms). */
+/** Duración de la pantalla "analizando tus respuestas" (ms). */
 export const ANALYZING_MS = 3000;

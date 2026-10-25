@@ -1,17 +1,17 @@
-// Todos os textos do funil ficam aqui para facilitar a edição.
+// Todos los textos del embudo están aquí para facilitar la edición.
 
 export const DISCLAIMER =
-  "Este conteúdo é educacional. Os resultados variam de pessoa para pessoa e dependem do esforço, do produto escolhido e do mercado. Não garantimos ganhos específicos.";
+  "Este contenido es educativo. Los resultados varían de persona a persona y dependen del esfuerzo, del producto elegido y del mercado. No garantizamos ingresos específicos.";
 
 export const intro = {
-  brand: "Loja no Celular 45+",
-  headline: "Depois dos 45, o celular na sua mão pode virar o seu próprio negócio.",
-  sub: "Responda 8 perguntas rápidas (2 minutos) e descubra qual é o seu perfil de vendedora/vendedor online e por onde começar.",
-  button: "COMEÇAR AGORA",
+  brand: "Tienda en el Celular 45+",
+  headline: "Después de los 45, el celular en tu mano puede convertirse en tu propio negocio.",
+  sub: "Responde 8 preguntas rápidas (2 minutos) y descubre cuál es tu perfil de vendedor(a) online y por dónde empezar.",
+  button: "EMPEZAR AHORA",
   trust: [
-    "Sem precisar de computador",
-    "Comece com pouco investimento",
-    "Explicado passo a passo, sem enrolação",
+    "Sin necesidad de computadora",
+    "Empieza con poca inversión",
+    "Explicado paso a paso, sin vueltas",
   ],
 };
 
@@ -20,87 +20,101 @@ export type Option = { value: string; label: string };
 export type Question = { id: QuestionId; title: string; options: Option[] };
 
 export const questions: Question[] = [
-  { id: "q1", title: "Qual é a sua faixa de idade?", options: [
-    { value: "45-49", label: "45 a 49 anos" },
-    { value: "50-59", label: "50 a 59 anos" },
-    { value: "60+", label: "60 anos ou mais" },
-    { value: "<45", label: "Menos de 45 anos" },
+  { id: "q1", title: "¿Cuál es tu rango de edad?", options: [
+    { value: "45-49", label: "45 a 49 años" },
+    { value: "50-59", label: "50 a 59 años" },
+    { value: "60+", label: "60 años o más" },
+    { value: "<45", label: "Menos de 45 años" },
   ]},
-  { id: "q2", title: "Hoje, como você usa o celular?", options: [
-    { value: "social", label: "Só WhatsApp e redes sociais" },
-    { value: "some_online", label: "Já compro e vendo algo online às vezes" },
-    { value: "skilled", label: "Uso bem, aprendo rápido com apps" },
-    { value: "difficulty", label: "Tenho dificuldade, preciso de ajuda passo a passo" },
+  { id: "q2", title: "Hoy, ¿cómo usas el celular?", options: [
+    { value: "social", label: "Solo WhatsApp y redes sociales" },
+    { value: "some_online", label: "Ya compro o vendo algo online a veces" },
+    { value: "skilled", label: "Lo uso bien, aprendo rápido con apps" },
+    { value: "difficulty", label: "Me cuesta, necesito ayuda paso a paso" },
   ]},
-  { id: "q3", title: "Já tentou ganhar dinheiro pela internet?", options: [
-    { value: "never", label: "Nunca tentei" },
-    { value: "failed", label: "Tentei e não deu certo" },
-    { value: "sold", label: "Já vendi algumas coisas" },
-    { value: "business", label: "Já tenho um pequeno negócio" },
+  { id: "q3", title: "¿Ya intentaste ganar dinero por internet?", options: [
+    { value: "never", label: "Nunca lo intenté" },
+    { value: "failed", label: "Lo intenté y no funcionó" },
+    { value: "sold", label: "Ya vendí algunas cosas" },
+    { value: "business", label: "Ya tengo un pequeño negocio" },
   ]},
-  { id: "q4", title: "Quanto tempo por dia você teria para isso?", options: [
-    { value: "1h", label: "Até 1 hora" },
+  { id: "q4", title: "¿Cuánto tiempo al día tendrías para esto?", options: [
+    { value: "1h", label: "Hasta 1 hora" },
     { value: "1-2h", label: "1 a 2 horas" },
-    { value: "3h+", label: "3 horas ou mais" },
+    { value: "3h+", label: "3 horas o más" },
   ]},
-  { id: "q5", title: "Quanto você se sentiria confortável em investir para começar?", options: [
-    { value: "zero", label: "Quase nada, quero começar do zero" },
-    { value: "100", label: "Até R$ 100" },
-    { value: "100-500", label: "R$ 100 a R$ 500" },
-    { value: "500+", label: "Mais de R$ 500" },
+  { id: "q5", title: "¿Cuánto te sentirías cómodo(a) invirtiendo para empezar?", options: [
+    { value: "zero", label: "Casi nada, quiero empezar desde cero" },
+    { value: "20", label: "Hasta 20 USD" },
+    { value: "20-100", label: "De 20 a 100 USD" },
+    { value: "100+", label: "Más de 100 USD" },
   ]},
-  { id: "q6", title: "O que mais combina com você?", options: [
-    { value: "talk", label: "Gosto de conversar e atender pessoas" },
-    { value: "organize", label: "Gosto de organizar e pesquisar" },
-    { value: "create", label: "Gosto de criar e mostrar coisas bonitas" },
-    { value: "numbers", label: "Gosto de números e estratégia" },
+  { id: "q6", title: "¿Qué te describe mejor?", options: [
+    { value: "talk", label: "Me gusta conversar y atender personas" },
+    { value: "organize", label: "Me gusta organizar e investigar" },
+    { value: "create", label: "Me gusta crear y mostrar cosas lindas" },
+    { value: "numbers", label: "Me gustan los números y la estrategia" },
   ]},
-  { id: "q7", title: "Qual é o seu principal objetivo?", options: [
-    { value: "extra", label: "Uma renda extra no fim do mês" },
-    { value: "bills", label: "Ajudar a pagar as contas da casa" },
-    { value: "main", label: "Transformar em minha principal fonte de renda" },
-    { value: "hobby", label: "Ter um hobby que também gera dinheiro" },
+  { id: "q7", title: "¿Cuál es tu objetivo principal?", options: [
+    { value: "extra", label: "Un ingreso extra a fin de mes" },
+    { value: "bills", label: "Ayudar a pagar las cuentas de la casa" },
+    { value: "main", label: "Convertirlo en mi fuente principal de ingresos" },
+    { value: "hobby", label: "Tener un pasatiempo que también genere dinero" },
   ]},
-  { id: "q8", title: "O que mais te trava hoje?", options: [
-    { value: "scam", label: "Medo de cair em golpe" },
-    { value: "product", label: "Não sei qual produto vender" },
-    { value: "store", label: "Não sei criar loja ou anúncio" },
-    { value: "time", label: "Falta de tempo" },
+  { id: "q8", title: "¿Qué es lo que más te frena hoy?", options: [
+    { value: "scam", label: "Miedo a caer en una estafa" },
+    { value: "product", label: "No sé qué producto vender" },
+    { value: "store", label: "No sé crear una tienda o un anuncio" },
+    { value: "time", label: "Falta de tiempo" },
   ]},
 ];
 
 export const quizUi = {
-  progress: (n: number, total: number) => `Pergunta ${n} de ${total}`,
-  back: "Voltar",
+  progress: (n: number, total: number) => `Pregunta ${n} de ${total}`,
+  back: "Volver",
 };
 
 export const analyzing = {
-  title: "Analisando suas respostas...",
+  title: "Analizando tus respuestas...",
   lines: [
-    "Estamos montando o seu perfil com calma.",
-    "Seus dados estão protegidos.",
-    "Falta pouquinho!",
+    "Estamos armando tu perfil con calma.",
+    "Tus datos están protegidos.",
+    "¡Ya falta poquito!",
   ],
 };
 
 export const leadForm = {
-  title: "Seu perfil está pronto!",
-  sub: "Para ver o resultado e receber seu mapa personalizado, informe:",
-  name: "Nome",
-  whatsapp: "WhatsApp (com DDD)",
-  email: "E-mail",
-  consent: "Concordo em receber contato sobre o curso.",
-  privacy: "Usamos seus dados apenas para falar sobre o curso. Você pode pedir para sair a qualquer momento.",
-  submit: "VER MEU RESULTADO",
+  title: "¡Tu perfil está listo!",
+  sub: "Para ver el resultado y recibir tu mapa personalizado, completa:",
+  name: "Nombre",
+  whatsapp: "WhatsApp",
+  email: "Correo electrónico",
+  consent: "Acepto recibir información sobre el curso.",
+  privacy: "Usamos tus datos solo para hablar sobre el curso. Puedes pedir salir en cualquier momento.",
+  submit: "VER MI RESULTADO",
   sending: "Enviando...",
   errors: {
-    name: "Digite seu nome",
-    whatsapp: "Digite um WhatsApp válido com DDD",
-    email: "Digite um e-mail válido",
-    consent: "Marque a caixa para continuar",
-    generic: "Não conseguimos enviar agora. Tente de novo em instantes.",
+    name: "Escribe tu nombre",
+    whatsapp: "Escribe un número de WhatsApp válido",
+    email: "Escribe un correo electrónico válido",
+    consent: "Marca la casilla para continuar",
+    generic: "No pudimos enviar ahora. Inténtalo de nuevo en unos instantes.",
   },
 };
+
+/** Códigos de país comunes en Sudamérica para el campo de WhatsApp. */
+export const countryCodes = [
+  { code: "54", label: "Argentina", iso: "AR" },
+  { code: "57", label: "Colombia", iso: "CO" },
+  { code: "56", label: "Chile", iso: "CL" },
+  { code: "51", label: "Perú", iso: "PE" },
+  { code: "593", label: "Ecuador", iso: "EC" },
+  { code: "591", label: "Bolivia", iso: "BO" },
+  { code: "595", label: "Paraguay", iso: "PY" },
+  { code: "598", label: "Uruguay", iso: "UY" },
+  { code: "58", label: "Venezuela", iso: "VE" },
+  { code: "55", label: "Brasil", iso: "BR" },
+] as const;
 
 export type ProfileKey = "relacionamento" | "vitrine" | "estrategista" | "iniciante";
 
@@ -108,60 +122,60 @@ export const profiles: Record<ProfileKey, {
   name: string; path: string; description: string; firstStep: string; checklist: string[];
 }> = {
   relacionamento: {
-    name: "Vendedora(o) de Relacionamento",
+    name: "Vendedor(a) de Relaciones",
     path: "Instagram + WhatsApp + Facebook Marketplace",
     description:
-      "Você gosta de conversar e de atender bem as pessoas — e isso é uma grande vantagem nas vendas pelo celular. Muita gente compra de quem passa confiança. Seu caminho é usar o WhatsApp para atender, o Instagram para mostrar quem você é e o Marketplace do Facebook para encontrar compradores perto de você.",
-    firstStep: "Escolher um produto simples e anunciá-lo no Facebook Marketplace da sua cidade.",
+      "Te gusta conversar y atender bien a las personas — y eso es una gran ventaja en las ventas por celular. Mucha gente compra a quien le transmite confianza. Tu camino es usar WhatsApp para atender, Instagram para mostrar quién eres y el Marketplace de Facebook para encontrar compradores cerca de ti.",
+    firstStep: "Elegir un producto simple y anunciarlo en el Facebook Marketplace de tu ciudad.",
     checklist: [
-      "Organizar seu WhatsApp com uma mensagem de boas-vindas",
-      "Publicar seu primeiro anúncio no Marketplace com boas fotos",
-      "Responder cada interessado com calma e simpatia",
+      "Organizar tu WhatsApp con un mensaje de bienvenida",
+      "Publicar tu primer anuncio en Marketplace con buenas fotos",
+      "Responder a cada interesado con calma y simpatía",
     ],
   },
   vitrine: {
-    name: "Criadora(or) de Vitrine",
-    path: "Instagram + loja online simples",
+    name: "Creador(a) de Vitrina",
+    path: "Instagram + tienda online simple",
     description:
-      "Você tem bom gosto e gosta de mostrar coisas bonitas. No mundo online, uma boa foto e uma vitrine caprichada fazem diferença. Seu caminho é montar um perfil de Instagram bem cuidado e uma loja online simples, feita pelo próprio celular, para as pessoas comprarem com facilidade.",
-    firstStep: "Montar um perfil de Instagram profissional com nome, foto e descrição clara.",
+      "Tienes buen gusto y te gusta mostrar cosas lindas. En el mundo online, una buena foto y una vitrina bien cuidada hacen la diferencia. Tu camino es armar un perfil de Instagram bien cuidado y una tienda online simple, hecha desde el propio celular, para que las personas compren con facilidad.",
+    firstStep: "Crear un perfil de Instagram profesional con nombre, foto y descripción clara.",
     checklist: [
-      "Escolher um tema bonito para seu perfil",
-      "Tirar fotos dos produtos com luz natural",
-      "Criar uma loja online simples com poucos produtos",
+      "Elegir un estilo bonito para tu perfil",
+      "Tomar fotos de los productos con luz natural",
+      "Crear una tienda online simple con pocos productos",
     ],
   },
   estrategista: {
-    name: "Estrategista de Produto",
-    path: "Escolha de produtos certos + pequenos anúncios no Facebook e Instagram",
+    name: "Estratega de Producto",
+    path: "Elección de los productos correctos + pequeños anuncios en Facebook e Instagram",
     description:
-      "Você gosta de pesquisar, organizar e pensar antes de agir. Isso ajuda muito na parte mais importante: escolher o produto certo. Seu caminho é aprender a avaliar produtos com calma e testar pequenos anúncios no Facebook e Instagram, com valores baixos, acompanhando os números.",
-    firstStep: "Fazer uma lista de 5 produtos e comparar preço, procura e concorrência.",
+      "Te gusta investigar, organizar y pensar antes de actuar. Eso ayuda mucho en la parte más importante: elegir el producto correcto. Tu camino es aprender a evaluar productos con calma y probar pequeños anuncios en Facebook e Instagram, con valores bajos, siguiendo los números.",
+    firstStep: "Hacer una lista de 5 productos y comparar precio, demanda y competencia.",
     checklist: [
-      "Pesquisar o que já está sendo procurado na sua região",
-      "Anotar custos e preço de venda de cada produto",
-      "Testar um anúncio pequeno, com valor que não pese no bolso",
+      "Investigar qué se está buscando en tu región",
+      "Anotar costos y precio de venta de cada producto",
+      "Probar un anuncio pequeño, con un valor que no pese en el bolsillo",
     ],
   },
   iniciante: {
-    name: "Iniciante Protegida(o)",
-    path: "Começo seguro, passo a passo, com investimento mínimo",
+    name: "Principiante Protegido(a)",
+    path: "Comienzo seguro, paso a paso, con inversión mínima",
     description:
-      "Você quer começar, mas com segurança — e isso é muito sensato. Na internet existem golpes, e saber se proteger é o primeiro passo. Seu caminho é começar devagar, aprendendo cada etapa no seu ritmo, sem gastar quase nada, até ganhar confiança para ir além.",
-    firstStep: "Aprender a reconhecer sinais de golpe e a vender com segurança pelo celular.",
+      "Quieres empezar, pero con seguridad — y eso es muy sensato. En internet existen estafas, y saber protegerte es el primer paso. Tu camino es empezar despacio, aprendiendo cada etapa a tu ritmo, sin gastar casi nada, hasta ganar confianza para ir más lejos.",
+    firstStep: "Aprender a reconocer señales de estafa y a vender con seguridad desde el celular.",
     checklist: [
-      "Configurar a segurança do seu WhatsApp e redes sociais",
-      "Começar vendendo algo que você já tem em casa",
-      "Receber pagamentos só por meios seguros",
+      "Configurar la seguridad de tu WhatsApp y redes sociales",
+      "Empezar vendiendo algo que ya tienes en casa",
+      "Recibir pagos solo por medios seguros",
     ],
   },
 };
 
 export const result = {
-  eyebrow: "Seu perfil é",
-  pathLabel: "Melhor caminho para você",
-  firstStepLabel: "Seu primeiro passo recomendado",
-  checklistLabel: "Seus 3 primeiros passos",
-  cta: "QUERO COMEÇAR PELO MEU PERFIL",
-  restart: "Refazer o quiz",
+  eyebrow: "Tu perfil es",
+  pathLabel: "Mejor camino para ti",
+  firstStepLabel: "Tu primer paso recomendado",
+  checklistLabel: "Tus 3 primeros pasos",
+  cta: "QUIERO EMPEZAR SEGÚN MI PERFIL",
+  restart: "Rehacer el quiz",
 };
