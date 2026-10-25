@@ -8,8 +8,8 @@ import { DISCLAIMER, intro, questions, quizUi, analyzing, leadForm, profiles, re
 import { computeProfile, type Answers } from "@/lib/profile";
 import { initPixel, track, trackCustom } from "@/lib/pixel";
 
-const TITLE = "Loja no Celular 45+ | Descubra seu perfil";
-const DESC = "Responda 8 perguntas rápidas e descubra seu perfil para vender pelo celular depois dos 45.";
+const TITLE = "Tienda en el Celular 45+ | Descubre tu perfil";
+const DESC = "Responde 8 preguntas rápidas y descubre tu perfil para vender desde el celular después de los 45.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
