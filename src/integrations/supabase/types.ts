@@ -14,7 +14,51 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      quiz_leads: {
+        Row: {
+          answers: Json
+          consent: boolean
+          created_at: string
+          email: string
+          id: string
+          name: string
+          profile: string
+          utm_campaign: string | null
+          utm_content: string | null
+          utm_medium: string | null
+          utm_source: string | null
+          whatsapp: string
+        }
+        Insert: {
+          answers?: Json
+          consent: boolean
+          created_at?: string
+          email: string
+          id?: string
+          name: string
+          profile: string
+          utm_campaign?: string | null
+          utm_content?: string | null
+          utm_medium?: string | null
+          utm_source?: string | null
+          whatsapp: string
+        }
+        Update: {
+          answers?: Json
+          consent?: boolean
+          created_at?: string
+          email?: string
+          id?: string
+          name?: string
+          profile?: string
+          utm_campaign?: string | null
+          utm_content?: string | null
+          utm_medium?: string | null
+          utm_source?: string | null
+          whatsapp?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
