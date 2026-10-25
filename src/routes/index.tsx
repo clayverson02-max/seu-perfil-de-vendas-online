@@ -49,7 +49,7 @@ function Funnel() {
   }, [step]);
 
   const choose = (i: number, value: string) => {
-    const q = questions[i];
+    const q = questions[i]!;
     setAnswers((a) => ({ ...a, [q.id]: value }));
     setTimeout(() => {
       if (i + 1 < questions.length) setStep({ kind: "quiz", i: i + 1 });
@@ -97,7 +97,7 @@ function Intro({ onStart }: { onStart: () => void }) {
       <button className="btn-cta text-xl" onClick={onStart}>{intro.button}</button>
       <ul className="flex flex-col gap-3">
         {intro.trust.map((t, i) => {
-          const Icon = icons[i];
+          const Icon = icons[i]!;
           return (
             <li key={t} className="flex items-center gap-4 rounded-2xl bg-card p-4 shadow-card">
               <span className="flex size-12 shrink-0 items-center justify-center rounded-full bg-accent-soft">
@@ -113,7 +113,7 @@ function Intro({ onStart }: { onStart: () => void }) {
 }
 
 function Quiz({ i, answers, onChoose, onBack }: { i: number; answers: Answers; onChoose: (i: number, v: string) => void; onBack: () => void }) {
-  const q = questions[i];
+  const q = questions[i]!;
   const pct = ((i + 1) / questions.length) * 100;
   return (
     <section className="flex flex-col gap-6">
@@ -175,7 +175,7 @@ const schema = z.object({
   name: z.string().trim().min(2, leadForm.errors.name).max(100),
   whatsapp: z.string().refine((v) => { const d = v.replace(/\D/g, ""); return d.length === 10 || d.length === 11; }, leadForm.errors.whatsapp),
   email: z.string().trim().email(leadForm.errors.email).max(255),
-  consent: z.literal(true, { errorMap: () => ({ message: leadForm.errors.consent }) }),
+  consent: z.literal(true, { errorMap: () => ({ message: leadForm.errors["consent"] }) }),
 });
 
 function LeadForm({ answers, utm, onDone }: { answers: Answers; utm: Utm; onDone: (p: ProfileKey) => void }) {
@@ -235,7 +235,7 @@ function LeadForm({ answers, utm, onDone }: { answers: Answers; utm: Utm; onDone
             className="mt-0.5 size-7 shrink-0 accent-[var(--accent)]" />
           <span className="text-lg">{leadForm.consent}</span>
         </label>
-        {errors.consent && <span className="text-base font-bold text-destructive">{errors.consent}</span>}
+        {errors["consent"] && <span className="text-base font-bold text-destructive">{errors["consent"]}</span>}
         <p className="flex items-start gap-2 text-base text-muted-foreground">
           <ShieldCheck className="mt-0.5 size-5 shrink-0" aria-hidden /> {leadForm.privacy}
         </p>
