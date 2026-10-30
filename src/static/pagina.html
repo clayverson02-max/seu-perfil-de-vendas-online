@@ -18,7 +18,8 @@ fbq('track', 'PageView');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
 <style>
-:root{--ink:#1c2325;--mut:#5f6a6d;--line:#e6e9ea;--soft:#f5f6f4;--brand:#0f4c5c;--teal:#1f9e92;--cta:#e2572f;--ctad:#b8411f;--red:#c9412e}
+:root{--ink:#1c2325;--mut:#262d2f;--line:#e6e9ea;--soft:#f5f6f4;--brand:#0f4c5c;--teal:#1f9e92;--cta:#e2572f;--ctad:#b8411f;--red:#c9412e}
+[hidden]{display:none!important}
 *{box-sizing:border-box}html{scroll-behavior:smooth}html,body{margin:0}
 body{font-family:Inter,system-ui,-apple-system,sans-serif;background:#fff;color:var(--ink);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
@@ -77,7 +78,7 @@ section.soft{background:var(--soft)}
 .mods span{display:block;font-weight:400;font-size:14px;color:var(--mut)}
 .books{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px}
 .books div{font-size:15px;font-weight:600}
-.books img{border-radius:6px;box-shadow:0 8px 20px rgba(0,0,0,.15);margin-bottom:8px;aspect-ratio:210/297;object-fit:cover;width:100%}
+.books img{margin-bottom:4px;width:100%;aspect-ratio:640/820;object-fit:cover}
 .books small{display:block;font-weight:400;color:var(--mut)}
 .wa{display:flex;gap:12px;align-items:flex-start;background:#effaf3;border-radius:12px;padding:14px;margin-top:16px;font-size:16px}
 .wa svg{flex:none}
@@ -120,16 +121,12 @@ details p{margin:8px 0 0;color:var(--mut);font-size:16px}
 <div class="bar">Cupón <b>PRIMEROS50</b> disponible solo hoy · termina en <b id="dayLeft">--:--:--</b></div>
 
 <header class="hero"><div class="w">
-  <div class="eyebrow">Para quien pasa horas sentado</div>
   <h1>Tu espalda no está vieja. <span class="hl">Está trabada.</span></h1>
-  <p class="sub">Mira este video de 1 minuto y entiende por qué el dolor siempre vuelve — y cómo soltarlo en casa, en 10 minutos al día.</p>
+  <p class="sub">Mira este video de 1 minuto. Vas a entender por qué el dolor siempre vuelve y cómo soltarlo en casa, en 10 minutos al día.</p>
   <div class="vsl" id="vslBox"><video id="vsl" src="vsl.mp4" poster="img/vsl_poster.jpg" playsinline muted autoplay loop preload="metadata"></video><button class="snd" id="snd" type="button"><span>🔊 Toca para escuchar</span></button></div>
-  <a class="btn" href="#oferta" data-cta="hero">Quiero destrabar mi espalda<small>Ver la oferta con cupón de descuento</small></a>
-  <div class="ticks"><span>✓ Acceso inmediato</span><span>✓ Solo un tapete</span><span>✓ Garantía de 7 días</span></div>
 </div></header>
 
 <section class="soft"><div class="w rv">
-  <div class="eyebrow">Paso 1 · Reconoce las señales</div>
   <h2>¿Cuántas de estas te pasan hoy?</h2>
   <p class="mut">Toca las que se aplican a ti.</p>
   <ul class="chk" id="chk">
@@ -144,18 +141,18 @@ details p{margin:8px 0 0;color:var(--mut);font-size:16px}
 </div></section>
 
 <section><div class="w rv">
-  <div class="eyebrow">Paso 2 · Entiende la causa</div>
-  <h2>El dolor no es el problema. <span class="hl">Es la señal.</span></h2>
+  <h2>¿Por qué el dolor siempre vuelve?</h2>
   <p>Tu cuerpo funciona como una cadena. Cuando pasas horas sentado, la cadera se acorta, la zona lumbar compensa y el cuello termina pagando la cuenta.</p>
   <div class="chain"><div><b>1</b>Cadera acortada</div><div><b>2</b>Lumbar sobrecargada</div><div><b>3</b>Cuello y hombros duros</div></div>
   <div class="pic"><img src="img/oficina.jpg" alt="Persona con dolor lumbar al levantarse del escritorio" loading="lazy"></div>
-  <p>Por eso la pastilla calma… y a los días vuelve. Calma la señal, pero lo que está trabado sigue ahí. Y cada semana que pasa sentado, se traba un poco más.</p>
-  <p class="quote">Mientras no sueltes la cadena completa, tu espalda te va a seguir cobrando cada mañana.</p>
+  <a class="btn" href="#oferta" data-cta="causa">Quiero destrabar mi espalda<small>Ver la oferta con cupón de descuento</small></a>
+  <div style="height:22px"></div>
+  <p>Por eso la pastilla calma y a los pocos días el dolor vuelve. Calma lo que sientes, pero lo que está trabado sigue ahí. Y cada semana sentado se traba un poco más.</p>
+  <p class="quote">Si no sueltas la cadena completa, tu espalda te sigue cobrando cada mañana.</p>
 </div></section>
 
 <section class="soft"><div class="w rv">
-  <div class="eyebrow">Paso 3 · La salida</div>
-  <h2>No necesitas gimnasio. Necesitas el orden correcto.</h2>
+  <h2>No hace falta gimnasio. Hace falta el orden correcto.</h2>
   <p>Soltar la espalda no es hacer ejercicios al azar. Es mover cada parte de la cadena en el orden correcto, unos minutos por día, hasta que el cuerpo recupera el movimiento.</p>
   <div class="vs">
     <div><h3>Lo que ya probaste</h3><ul><li>Pastilla: calma y vuelve</li><li>Masaje: alivio de un día</li><li>Videos sueltos sin orden</li><li>Gimnasio: no hay tiempo</li></ul></div>
@@ -164,7 +161,6 @@ details p{margin:8px 0 0;color:var(--mut);font-size:16px}
 </div></section>
 
 <section><div class="w rv">
-  <div class="eyebrow">Paso 4 · Lo que recibes</div>
   <h2>Así es Destraba por dentro</h2>
   <p>Una plataforma simple, en tu celular: eliges dónde te duele y sigues el ejercicio paso a paso, con la demostración del movimiento en pantalla.</p>
   <div class="phones">
@@ -172,17 +168,16 @@ details p{margin:8px 0 0;color:var(--mut);font-size:16px}
     <div class="phone"><div class="f"><img src="img/app_ex.jpg" alt="Pantalla de un ejercicio con demostración animada" loading="lazy"></div><p>Sigues el movimiento paso a paso</p></div>
     <div class="phone"><div class="f"><img src="img/app_mat.jpg" alt="Pantalla de materiales y bonos" loading="lazy"></div><p>Descargas tus guías y bonos</p></div>
   </div>
-  <p class="hint">Desliza para ver →</p>
   <h3 style="margin-top:24px">150 ejercicios organizados por zona</h3>
   <div class="mods">
     <div>Cuello y cervical<span>20 ejercicios</span></div><div>Hombros y brazos<span>20 ejercicios</span></div><div>Espalda alta<span>25 ejercicios</span></div><div>Zona lumbar<span>25 ejercicios</span></div><div>Cadera y glúteos<span>20 ejercicios</span></div><div>Manos y muñecas<span>15 ejercicios</span></div><div>Piernas y pies<span>15 ejercicios</span></div><div>Rutinas listas<span>10 rutinas de 10 min</span></div>
   </div>
-  <h3 style="margin-top:28px">+ Guía principal y 3 bonos en PDF</h3>
+  <h3 style="margin-top:28px">Además: la guía principal y 3 bonos</h3>
   <div class="books">
-    <div><img src="img/pdf_0.jpg" alt="Guía Mapa del Cuerpo y Plan de 4 Semanas" loading="lazy">Mapa del Cuerpo y Plan de 4 Semanas<small>Guía principal</small></div>
-    <div><img src="img/pdf_1.jpg" alt="Bono Desafío Destraba 7 Días" loading="lazy">Desafío Destraba 7 Días<small>Bono 1 · con checklist</small></div>
-    <div><img src="img/pdf_2.jpg" alt="Bono Postura en Home Office" loading="lazy">Postura en Home Office<small>Bono 2</small></div>
-    <div><img src="img/pdf_3.jpg" alt="Bono Mapa del Dolor" loading="lazy">Mapa del Dolor<small>Bono 3</small></div>
+    <div><img src="img/bono_0.jpg" alt="Guía Mapa del Cuerpo y Plan de 4 Semanas" loading="lazy">Mapa del Cuerpo y Plan de 4 Semanas<small>Guía principal</small></div>
+    <div><img src="img/bono_1.jpg" alt="Bono Desafío Destraba 7 Días" loading="lazy">Desafío Destraba 7 Días<small>Bono 1 · con checklist</small></div>
+    <div><img src="img/bono_2.jpg" alt="Bono Postura en Home Office" loading="lazy">Postura en Home Office<small>Bono 2</small></div>
+    <div><img src="img/bono_3.jpg" alt="Bono Mapa del Dolor" loading="lazy">Mapa del Dolor<small>Bono 3</small></div>
   </div>
   <div class="wa"><svg width="34" height="34" viewBox="0 0 36 36"><circle cx="18" cy="18" r="17" fill="#25d366"/><path d="M11 25l1.4-4.2A7.5 7.5 0 1 1 15.6 24z" fill="none" stroke="#fff" stroke-width="2"/></svg><span><b>Acompañamiento de un profesional por WhatsApp.</b> Para resolver dudas y adaptar los ejercicios a tu caso. Solo para los primeros 50 alumnos.</span></div>
   <a class="btn sec" href="#oferta" data-cta="entregables">Quiero todo esto con descuento</a>
@@ -251,7 +246,10 @@ if(Date.now()>end.getTime())expire();else if(applied){if(Date.now()-applied<WIN)
 $('apply').addEventListener('click',()=>{const at=Date.now();LS.set('dt_cupon',at);fb('track','Lead',{content_name:'Cupon PRIMEROS50',content_category:'pagina_b'});showApplied(at);setTimeout(()=>$('buy').scrollIntoView({behavior:'smooth',block:'center'}),200)});
 $('buy').addEventListener('click',()=>{$('buy').href=ckUrl();fb('track','InitiateCheckout',{value:9.9,currency:'USD',content_name:'Destraba tu Espalda en 7 Dias',content_category:'pagina_b'})});
 document.querySelectorAll('[data-cta]').forEach(a=>a.addEventListener('click',()=>fb('trackCustom','CTA_B',{pos:a.dataset.cta})));
-// botón fijo: aparece tras el video y se esconde en la oferta
-const st=$('sticky');addEventListener('scroll',()=>{const o=$('oferta').getBoundingClientRect();st.classList.toggle('show',scrollY>700&&(o.top>innerHeight||o.bottom<0))},{passive:true});
+// carrusel automático
+(function(){const c=document.querySelector('.phones');if(!c)return;let i=0,hold=0;const n=c.children.length;c.addEventListener('touchstart',()=>hold=Date.now(),{passive:true});setInterval(()=>{if(Date.now()-hold<5000)return;i=(i+1)%n;const el=c.children[i];c.scrollTo({left:el.offsetLeft-c.offsetLeft-(c.clientWidth-el.clientWidth)/2,behavior:'smooth'})},2600)})();
+// botón fijo: aparece después del primer botón y se esconde en la oferta
+let pastCta=false;const firstCta=document.querySelector('[data-cta=causa]');
+const st=$('sticky');addEventListener('scroll',()=>{pastCta=firstCta.getBoundingClientRect().bottom<0;const o=$('oferta').getBoundingClientRect();st.classList.toggle('show',pastCta&&(o.top>innerHeight||o.bottom<0))},{passive:true});
 </script>
 </body></html>
