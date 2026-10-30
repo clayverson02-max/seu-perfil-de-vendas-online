@@ -115,7 +115,19 @@ details p{margin:8px 0 0;color:var(--mut);font-size:16px}
 .rv{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
 .rv.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}.vsl .snd span{animation:none}html{scroll-behavior:auto}}
-#lovable-badge,[id*=lovable-badge],a[href*="lovable.dev"][target=_blank]{display:none!important}
+
+a[href*="lovable.dev"],
+iframe[src*="lovable.dev"],
+div[style*="Edit with Lovable"],
+.lovable-badge,
+#lovable-badge {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  position: absolute !important;
+  z-index: -9999 !important;
+}
 </style>
 </head><body>
 <div class="bar">Cupón <b>PRIMEROS50</b> disponible solo hoy · termina en <b id="dayLeft">--:--:--</b></div>
