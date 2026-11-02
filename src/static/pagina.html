@@ -213,7 +213,7 @@ div[style*="Edit with Lovable"],
       <p>Baja el precio a <b>US$ 9,90</b>. Válido solo hoy. Al aplicarlo, tienes <b>5 minutos</b> para completar tu inscripción.</p>
       <button class="btn sec" type="button" id="apply" style="margin-top:12px">Aplicar cupón</button></div>
     <div class="timer" id="timer" hidden><span>Tu cupón está reservado por</span><b id="tLeft">05:00</b></div>
-    <a class="btn" id="buy" href="#" target="_blank" rel="noopener" hidden>Sí, quiero destrabar mi espalda →<small>Pagar US$ 9,90 con mi cupón</small></a>
+    <a class="btn" id="buy" href="https://pay.hotmart.com/R108272304D?checkoutMode=10" target="_blank" rel="noopener">Sí, quiero destrabar mi espalda →<small>Continuar al pago seguro</small></a>
     <div class="warn" id="expired">Tu tiempo de 5 minutos terminó y el cupón ya no está disponible en este dispositivo.</div>
     <div class="seal"><i>7<br>DÍAS</i><span><b>Garantía de 7 días.</b> Entra, prueba las rutinas y, si no es para ti, pides el reembolso dentro de ese plazo.</span></div>
     <p class="secure">🔒 Pago seguro · Recibes el acceso por e-mail</p>
@@ -233,7 +233,7 @@ div[style*="Edit with Lovable"],
 <div class="sticky" id="sticky"><a class="btn" href="#oferta" id="stickyBtn" data-cta="sticky">Ver la oferta con descuento</a></div>
 
 <script>
-const CHECKOUT='https://pay.cakto.com.br/zyh5x7o_1260521';
+const CHECKOUT='https://pay.hotmart.com/R108272304D?checkoutMode=10';
 const $=id=>document.getElementById(id);
 const LS={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
 const fb=(...a)=>{try{window.fbq&&window.fbq(...a)}catch(e){}};
@@ -252,7 +252,7 @@ function day(){const n=new Date(),e=new Date();e.setHours(23,59,59,0);const s=Ma
 let first=+LS.get('dt_first')||Date.now();LS.set('dt_first',first);const end=new Date(first);end.setHours(23,59,59,0);
 const WIN=5*60*1000;let tick=null;
 function showApplied(at){$('apply').hidden=true;$('pLabel').innerHTML='<s>Antes US$ 37</s> · con tu cupón';const pv=$('pVal');pv.textContent='US$ 9,90';pv.classList.add('drop');$('buy').href=ckUrl();$('buy').hidden=false;$('timer').hidden=false;$('stickyBtn').textContent='Completar mi inscripción';clearInterval(tick);const run=()=>{const left=at+WIN-Date.now();if(left<=0){clearInterval(tick);expire();return}$('tLeft').textContent=String(left/60000|0).padStart(2,'0')+':'+String((left%60000)/1000|0).padStart(2,'0')};run();tick=setInterval(run,1000)}
-function expire(){$('buy').hidden=true;$('timer').hidden=true;$('apply').hidden=true;$('pLabel').textContent='Precio normal';const pv=$('pVal');pv.textContent='US$ 37';pv.classList.remove('drop');$('expired').classList.add('show');$('stickyBtn').textContent='Ver la oferta'}
+function expire(){$('buy').href=ckUrl();$('buy').hidden=false;$('timer').hidden=true;$('apply').hidden=true;$('pLabel').textContent='Precio normal';const pv=$('pVal');pv.textContent='US$ 37';pv.classList.remove('drop');$('expired').classList.add('show');$('stickyBtn').textContent='Ver la oferta'}
 const applied=+LS.get('dt_cupon')||0;
 if(Date.now()>end.getTime())expire();else if(applied){if(Date.now()-applied<WIN)showApplied(applied);else expire()}
 $('apply').addEventListener('click',()=>{const at=Date.now();LS.set('dt_cupon',at);fb('track','Lead',{content_name:'Cupon PRIMEROS50',content_category:'pagina_b'});showApplied(at);setTimeout(()=>$('buy').scrollIntoView({behavior:'smooth',block:'center'}),200)});
