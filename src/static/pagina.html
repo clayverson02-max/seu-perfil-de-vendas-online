@@ -99,6 +99,14 @@ section{padding:32px 0}
 .coupon-price{animation:couponReveal .3s ease-out}
 @keyframes couponReveal{from{opacity:.35;transform:translateY(6px)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.coupon-price{animation:none}}
+
+.exercise-preview{margin-top:26px;padding-top:24px;border-top:1px solid #cbdad3}
+.exercise-preview h3{font-size:24px;line-height:1.25}
+.exercise-preview>p{font-size:16px;color:#283638}
+.exercise-player{max-width:360px;margin:18px auto 12px;border-radius:16px;overflow:hidden;background:#132a2e}
+.exercise-player video{display:block;width:100%;height:auto;aspect-ratio:480/704;object-fit:contain;background:#132a2e}
+.exercise-preview>.note{font-size:15px;margin-bottom:0}
+@media(max-width:360px){.exercise-preview h3{font-size:22px}}
 </style></head><body>
 <div class="bar">Movilidad guiada · 10 minutos en casa</div>
 <div class="w"><div class="brand">Destraba<span>Menos improvisar. Más claridad.</span></div></div>
@@ -174,6 +182,13 @@ section{padding:32px 0}
 <div aria-live="polite"><div class="eyebrow" id="demoStep">PASO 1 DE 3</div><h3 id="demoTitle">Tu contenido, por zona.</h3><p id="demoCopy">Elige una zona y consulta sus movimientos.</p></div>
 </div>
 <div class="numbers"><div><b>150</b>ejercicios guiados</div><div><b>10</b>rutinas listas</div><div><b>10 min</b>por rutina</div></div>
+<div class="exercise-preview" id="demostracion-ejercicios">
+  <h3>Mira una muestra de los ejercicios</h3>
+  <p>Una demostración en movimiento para que veas cómo se presentan los ejercicios.</p>
+  <div class="exercise-player"><video id="exerciseDemo" src="/videos/demostracion-ejercicios.mp4" poster="/img/demostracion-ejercicios.jpg" width="480" height="704" controls playsinline preload="none" aria-label="Demostración en video de un ejercicio de movilidad"></video></div>
+  <p class="note">Vista previa. Consulta las indicaciones y respeta tus límites al practicar.</p>
+</div>
+
 
 
 </div></section>
@@ -370,5 +385,20 @@ if('IntersectionObserver' in window){
     }
   },{threshold:.15});
   observer.observe(offer);
+}
+
+// La demostración se carga al reproducirla; pausa al salir de la vista.
+const exerciseDemo=$('exerciseDemo');
+let demoStarted=false;
+exerciseDemo.addEventListener('play',()=>{
+  if(demoStarted)return;
+  demoStarted=true;
+  fb('trackCustom','ExerciseDemoPlay',{variant:VARIANT});
+});
+if('IntersectionObserver' in window){
+  const demoObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{
+    if(!entry.isIntersecting&&!exerciseDemo.paused)exerciseDemo.pause();
+  }),{threshold:0});
+  demoObserver.observe(exerciseDemo);
 }
 </script></body></html>
