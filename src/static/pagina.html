@@ -44,6 +44,10 @@ details{padding:15px 0;border-bottom:1px solid var(--line)}summary{font-weight:7
 .pain-pair{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0}.pain-pair figure{margin:0}.pain-pair img{width:100%;height:200px;object-fit:cover;border-radius:14px}.pain-pair figcaption{font-size:13px;color:var(--mut);margin-top:7px;line-height:1.4}
 .feedbacks{display:grid;gap:16px;margin:22px 0}.feedback{border:1px solid var(--line);border-radius:18px;padding:20px;background:white}.feedback-head{display:grid;grid-template-columns:72px minmax(0,1fr);gap:14px;align-items:center;margin-bottom:14px}.feedback-head img{width:72px;height:100px;object-fit:contain;background:var(--soft);border-radius:10px}.feedback-head h3{font-size:19px;margin:0 0 4px}.feedback-head p{font-size:14px;margin:0;color:var(--mut)}.feedback blockquote{margin:0;font-size:17px;line-height:1.65}.illustrative{display:inline-block;font-size:11px;font-weight:800;color:#74430a;background:#fff0d6;padding:4px 7px;border-radius:5px;margin-bottom:10px}.feedback-note{border-left:3px solid #a87320;background:#fff8ed;padding:14px;font-size:14px;color:#5b472b}.limited{border:1px solid #e3b9aa;background:var(--peach);border-radius:13px;padding:14px;margin:18px 0;font-size:15px}.limited b{display:block;color:#96351f}
 @media(max-width:360px){.pain-pair{gap:9px}.pain-pair img{height:155px}.feedback{padding:16px}.feedback-head{grid-template-columns:64px minmax(0,1fr);gap:10px}.feedback-head img{width:64px;height:90px}.feedback blockquote{font-size:16px}}
+
+/* Fotografías nuevas: conservar el encuadre y evitar deformaciones en móvil. */
+.pain-stories{display:grid;gap:22px;margin:24px 0}.pain-story{min-width:0;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden}.pain-story figure,.care-visual{margin:0}.pain-story img,.care-visual img{display:block;width:100%;height:auto;object-fit:contain;background:#fff}.pain-story figcaption,.care-visual figcaption{font-size:12px;line-height:1.45;color:var(--mut);padding:10px 14px;background:var(--soft)}.pain-story-copy{padding:20px}.pain-story-copy .eyebrow{display:block;font-size:11px}.pain-story-copy h3{font-size:24px}.pain-story-copy p:last-child{margin-bottom:0}.care-visual{border:1px solid var(--line);border-radius:18px;overflow:hidden;margin:20px 0}.care-visual img{max-height:470px}.home-value{padding:20px;background:white;border:1px solid var(--line);border-radius:16px}.home-value .benefits{font-size:16px}.home-value .note{margin:0}
+@media(max-width:360px){.pain-story-copy,.home-value{padding:16px}.pain-story-copy h3{font-size:21px}.pain-story-copy p{font-size:16px}}
 </style></head><body>
 <div class="bar">¿Cansado de la rigidez? Empieza con un plan · 10 minutos en casa</div>
 <div class="w"><div class="brand">Destraba<span>Deja de improvisar. Empieza con un plan.</span></div></div>
@@ -70,7 +74,20 @@ details{padding:15px 0;border-bottom:1px solid var(--line)}summary{font-weight:7
 </div>
 <div class="response" id="checkResponse" aria-live="polite">Identifica lo que te frustra. Después, elige un primer paso que sí puedas organizar. La compra siempre está disponible.</div>
 <p class="note" style="margin-top:12px">Esta selección es opcional: no evalúa tu salud, no diagnostica y no condiciona tu compra.</p>
-<div class="pain-pair"><figure><img src="/img/oficina.jpg" alt="Persona con molestias lumbares al levantarse del escritorio" loading="lazy" decoding="async"><figcaption>Levantarte despacio. Volver a sentarte. Buscar otra postura.</figcaption></figure><figure><img src="/img/img1.jpg" alt="Imagen ilustrativa de tensión en la espalda" loading="lazy" decoding="async"><figcaption>Que la molestia termine decidiendo cómo trabajas, descansas y te mueves.</figcaption></figure></div>
+<div class="pain-stories">
+  <article class="pain-story">
+    <figure><img src="__DOLOR_LUMBAR__" alt="Imagen ilustrativa de una persona sujetándose la zona lumbar, resaltada en rojo" width="566" height="484" loading="lazy" decoding="async"><figcaption>Imagen ilustrativa de molestias en la zona lumbar; no es un diagnóstico.</figcaption></figure>
+    <div class="pain-story-copy"><span class="eyebrow">CUANDO HASTA LEVANTARTE CUESTA</span><h3>La silla. Los zapatos. Algo en el suelo. Y otra vez esa mano en la lumbar.</h3>
+    <p>Te incorporas despacio. Calculas cómo agacharte. Buscas una postura que te deje concentrarte. <b>Lo frustrante es tener que negociar con tu espalda para hacer cosas tan simples.</b></p>
+    <p>No necesitas acumular otra carpeta de videos guardados. Necesitas saber dónde encontrar una rutina y cómo seguir sus indicaciones, dentro de tus límites.</p></div>
+  </article>
+  <article class="pain-story">
+    <figure><img src="__DOLOR_ESPALDA__" alt="Ilustración de personas sujetándose la espalda con la región lumbar y la columna resaltadas" width="774" height="442" loading="lazy" decoding="async"><figcaption>Representación ilustrativa de la zona de molestia; la imagen no indica su causa.</figcaption></figure>
+    <div class="pain-story-copy"><span class="eyebrow">QUE LA MOLESTIA NO SEA EL CENTRO DE TU DÍA</span><h3>Cansado de cambiar de postura. De distraerte. De terminar el día pendiente de la espalda.</h3>
+    <p>Cuando la rigidez se mete en tu rutina, no solo incomoda: <b>te roba atención, te hace posponer actividades y convierte cada movimiento en algo que piensas de más.</b></p>
+    <p>Deja de improvisar el siguiente paso. En Destraba tienes movimientos organizados por zona y rutinas de 10 minutos para empezar a practicar movilidad en casa. Sin forzar ni perseguir resultados de otra persona.</p></div>
+  </article>
+</div>
 <p class="quote">No normalices vivir pendiente de cada movimiento. Si no sabes por dónde empezar, busca orientación y empieza con una estructura.</p>
 </div></section>
 
@@ -82,6 +99,18 @@ details{padding:15px 0;border-bottom:1px solid var(--line)}summary{font-weight:7
 <ul class="benefits"><li><b>Encuentra la zona sin perderte:</b> lumbar, cuello, hombros, espalda, cadera, manos o piernas.</li><li><b>Deja de adivinar el movimiento:</b> consulta la demostración y las instrucciones antes de practicar.</li><li><b>Hazle espacio en tu día:</b> rutinas de 10 minutos, en casa y a tu ritmo.</li></ul>
 <p class="quote">Otro “mañana empiezo” no te da una rutina. Reservarte 10 minutos sí te da un punto de partida.</p>
 <a class="btn secondary" href="https://pay.hotmart.com/R108272304D?checkoutMode=10" data-checkout data-pos="solution">QUIERO DEJAR DE BUSCAR Y EMPEZAR<small>US$ 9,90 · Pago único · Acceso inmediato</small></a>
+</div></section>
+
+<section class="soft" id="movilidad-en-casa"><div class="w">
+  <div class="eyebrow">UN PAGO. TU RUTINA A MANO.</div>
+  <h2>Tu práctica en casa no tiene por qué convertirse en otro gasto recurrente.</h2>
+  <p>¿Te frena pensar en el costo de nuevas sesiones, citas y traslados? <b>Para consultar una rutina de movilidad guiada en Destraba, no pagas una sesión cada vez que abres el contenido.</b></p>
+  <figure class="care-visual"><img src="__QUIROPRAXIA__" alt="Imagen ilustrativa de una mujer recibiendo atención manual de una profesional en una consulta" width="504" height="450" loading="lazy" decoding="async"><figcaption>Imagen ilustrativa de atención presencial. Destraba ofrece contenido educativo para practicar movilidad en casa; no ofrece esta atención ni la sustituye.</figcaption></figure>
+  <div class="home-value"><h3>US$ 9,90 una sola vez. Abre tu rutina desde el celular o la computadora.</h3>
+  <p>Tienes 150 movimientos organizados, 10 rutinas de 10 minutos y el desafío de 7 días. <b>Sin gimnasio, sin una mensualidad y sin pagar de nuevo por cada acceso.</b> Prepara tu espacio, consulta las indicaciones y practica a tu ritmo.</p>
+  <ul class="benefits"><li><b>Tu contenido, donde estés:</b> acceso por celular o computadora.</li><li><b>Una rutina corta:</b> 10 minutos para hacerle espacio a la movilidad en tu día.</li><li><b>Un pago, acceso vitalicio:</b> vuelve a las demostraciones cuando necesites revisarlas.</li></ul>
+  <p class="note">El precio corresponde al acceso educativo, no a un tratamiento ni a una promesa de alivio. Si necesitas una evaluación o atención profesional, este contenido no la reemplaza.</p></div>
+  <a class="btn secondary" href="https://pay.hotmart.com/R108272304D?checkoutMode=10" data-checkout data-pos="home-value">QUIERO MI RUTINA EN CASA POR US$ 9,90<small>Pago único · Acceso vitalicio · Garantía de 7 días</small></a>
 </div></section>
 
 <section class="soft"><div class="w">
