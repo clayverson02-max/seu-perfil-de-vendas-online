@@ -185,7 +185,7 @@ section{padding:32px 0}
 <div class="exercise-preview" id="demostracion-ejercicios">
   <h3>Mira una muestra de los ejercicios</h3>
   <p>Una demostración en movimiento para que veas cómo se presentan los ejercicios.</p>
-  <div class="exercise-player"><video id="exerciseDemo" src="/videos/demostracion-ejercicios.mp4" poster="/img/demostracion-ejercicios.jpg" width="480" height="704" controls playsinline preload="none" aria-label="Demostración en video de un ejercicio de movilidad"></video></div>
+  <div class="exercise-player"><video id="exerciseDemo" src="/videos/demostracion-ejercicios.mp4#t=0,12" poster="/img/demostracion-ejercicios.jpg" width="480" height="704" controls playsinline preload="none" aria-label="Demostración en video de un ejercicio de movilidad"></video></div>
   <p class="note">Vista previa. Consulta las indicaciones y respeta tus límites al practicar.</p>
 </div>
 
@@ -390,6 +390,20 @@ if('IntersectionObserver' in window){
 // La demostración se carga al reproducirla; pausa al salir de la vista.
 const exerciseDemo=$('exerciseDemo');
 let demoStarted=false;
+// Mostrar solo el ejercicio: el archivo original incluye controles del teléfono al final.
+const exercisePreviewEnd=12;
+function resetExercisePreview(){
+  exerciseDemo.pause();
+  exerciseDemo.load();
+}
+exerciseDemo.addEventListener('timeupdate',()=>{
+  if(exerciseDemo.currentTime>=exercisePreviewEnd)resetExercisePreview();
+});
+exerciseDemo.addEventListener('seeking',()=>{
+  if(exerciseDemo.currentTime>exercisePreviewEnd)resetExercisePreview();
+});
+exerciseDemo.addEventListener('ended',resetExercisePreview);
+
 exerciseDemo.addEventListener('play',()=>{
   if(demoStarted)return;
   demoStarted=true;
