@@ -13,7 +13,7 @@ fbq('track', 'PageView');
 <!-- UTMify -->
 <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids async defer></script>
 <!-- Microsoft Clarity -->
-<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "z5kq0chvuf");</script>
+<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "z7f39ukhkr");</script>
 <title>Destraba tu Espalda en 7 Días</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
@@ -48,75 +48,122 @@ details{padding:15px 0;border-bottom:1px solid var(--line)}summary{font-weight:7
 /* Fotografías nuevas: conservar el encuadre y evitar deformaciones en móvil. */
 .pain-stories{display:grid;gap:22px;margin:24px 0}.pain-story{min-width:0;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden}.pain-story figure,.care-visual{margin:0}.pain-story img,.care-visual img{display:block;width:100%;height:auto;object-fit:contain;background:#fff}.pain-story figcaption,.care-visual figcaption{font-size:12px;line-height:1.45;color:var(--mut);padding:10px 14px;background:var(--soft)}.pain-story-copy{padding:20px}.pain-story-copy .eyebrow{display:block;font-size:11px}.pain-story-copy h3{font-size:24px}.pain-story-copy p:last-child{margin-bottom:0}.care-visual{border:1px solid var(--line);border-radius:18px;overflow:hidden;margin:20px 0}.care-visual img{max-height:470px}.home-value{padding:20px;background:white;border:1px solid var(--line);border-radius:16px}.home-value .benefits{font-size:16px}.home-value .note{margin:0}
 @media(max-width:360px){.pain-story-copy,.home-value{padding:16px}.pain-story-copy h3{font-size:21px}.pain-story-copy p{font-size:16px}}
+
+/* Lectura clara y pocas llamadas a la acción: el pago se concentra en la oferta. */
+:root{--ink:#173237;--mut:#283638}
+body{padding-bottom:24px}
+.note,.trust{color:#283638;font-size:16px;line-height:1.65;font-weight:500}
+.brand span{color:#283638;font-size:14px;line-height:1.5}
+.eyebrow,.pain-story-copy .eyebrow{color:#125b4e;font-size:13px;line-height:1.55}
+.kicker{font-size:13px;color:#79301d;line-height:1.5}
+.tags span{font-size:14px;color:#253638}
+.btn small{font-size:14px;line-height:1.5;color:#fff;opacity:1;font-weight:600}
+.tab{font-size:14px;line-height:1.4}.day small{font-size:12px}
+.numbers div{font-size:14px;color:#283638}
+.pill{font-size:14px;color:#174b39}
+.feedback-head p,.feedback-note{font-size:15px;color:#283638;line-height:1.6}
+.illustrative{font-size:12px;color:#603800}
+.pain-story figcaption,.care-visual figcaption{font-size:14px;line-height:1.6;color:#283638;font-weight:500}
+footer{font-size:14px;line-height:1.7;color:#283638}
+.bonus small{font-size:15px;line-height:1.5;color:#283638}
+.value-breakdown{border:1px solid #c4d3cc;border-radius:18px;background:#fff;overflow:hidden;margin:22px 0 14px}
+.value-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:start;padding:18px;border-bottom:1px solid #dce5e2}
+.value-row h3{font-size:18px;margin:0 0 5px;letter-spacing:-.02em}
+.value-row p{margin:0;font-size:15px;line-height:1.5;color:#283638}
+.value-row>b{font-size:19px;color:#173237;white-space:nowrap}
+.value-support>b{font-size:15px}
+.value-total{padding:20px 18px;background:#104b50;color:#fff;display:flex;justify-content:space-between;gap:16px;align-items:center}
+.value-total span{font-size:17px;font-weight:600;line-height:1.4}
+.value-total strong{font-size:30px;line-height:1.2;white-space:nowrap}
+.value-transition{font-size:19px;margin-top:22px}
+.value-disclosure{font-size:15px}
+.coupon-panel{border:2px dashed #104b50;background:#f0f7f3;padding:18px;border-radius:15px;margin:16px 0}
+.coupon-heading{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.coupon-badge{background:#104b50;color:#fff;padding:5px 9px;font-size:13px;font-weight:800;border-radius:6px}
+.coupon-heading>b{font-size:20px}
+.coupon-panel p{font-size:16px;line-height:1.6;margin:12px 0 0;color:#1e3337}
+.coupon-panel .btn{margin-bottom:0}
+.coupon-success{font-size:16px;font-weight:700;color:#14503d;background:#e1f3e7;border-radius:10px;padding:12px;margin:18px 0 0}
+.coupon-price{color:#a43b20}
+.offer-return{margin:24px 0 0;font-size:16px;text-align:center}
+.offer-return a,.nojs-checkout{color:#104b50;font-weight:700;text-underline-offset:4px}
+#valor-del-pack,#contenido-incluido,#oferta{scroll-margin-top:20px}
+@media(max-width:360px){.tab{font-size:14px}.value-row{padding:15px;gap:12px}.value-row h3{font-size:17px}.value-total{padding:17px 15px;gap:10px}.value-total strong{font-size:28px}.coupon-panel{padding:14px}.brand{align-items:flex-start}.brand span{max-width:165px}}
+
+/* Ritmo de lectura: párrafos cortos, filas compactas y feedback al activar el cupón. */
+section{padding:32px 0}
+.pain-stories{gap:16px;margin:18px 0}.pain-story-copy{padding:17px 20px}
+.pain-story-copy h3{font-size:22px;line-height:1.25}.pain-story-copy p{margin-bottom:0}
+.value-row{padding:15px 18px}.value-row h3{margin:0;font-size:17px;line-height:1.4}
+.value-support h3{font-size:16px}
+.coupon-price{animation:couponReveal .3s ease-out}
+@keyframes couponReveal{from{opacity:.35;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.coupon-price{animation:none}}
 </style></head><body>
-<div class="bar">¿Cansado de la rigidez? Empieza con un plan · 10 minutos en casa</div>
-<div class="w"><div class="brand">Destraba<span>Deja de improvisar. Empieza con un plan.</span></div></div>
+<div class="bar">Movilidad guiada · 10 minutos en casa</div>
+<div class="w"><div class="brand">Destraba<span>Menos improvisar. Más claridad.</span></div></div>
 <header class="hero"><div class="w">
-<div class="eyebrow">Espalda rígida. Hombros cargados. Otro día limitado.</div>
-<h1>¿Levantarte de la silla se volvió una tortura? <span class="hl">Deja de organizar tu día alrededor de la rigidez.</span></h1>
-<p class="sub">Te incorporas despacio. Te llevas la mano a la lumbar. Llegas a la noche con el cuello y los hombros cargados. <b>Si estás cansado de improvisar, empieza con 150 movimientos guiados y rutinas de 10 minutos en casa.</b> Un plan claro para practicar movilidad, sin adivinar el siguiente paso.</p>
+<div class="eyebrow">¿OTRO DÍA CON LA ESPALDA RÍGIDA?</div>
+<h1>¿Levantarte de la silla cuesta? <span class="hl">No organices tu vida alrededor de la rigidez.</span></h1>
+<p class="sub">Lumbar cargada. Cuello duro. Otra postura incómoda. <b>Empieza con 150 movimientos guiados y rutinas de 10 minutos en casa.</b></p>
 <div class="tags"><span>150 movimientos por zona</span><span>10 rutinas de 10 minutos</span><span>Desafío 7 días + bonos</span></div>
 
-<a class="btn " href="https://pay.hotmart.com/R108272304D?checkoutMode=10" data-checkout data-pos="hero">BASTA DE IMPROVISAR · QUIERO EMPEZAR<small>US$ 9,90 · Pago único · Acceso inmediato</small></a>
-<p class="hero-price">Antes <s>US$ 37</s> · Ahora <b>US$ 9,90</b> · Sin mensualidades</p>
+
+
 <p class="trust">Entra hoy · Acceso vitalicio · Garantía de 7 días</p>
-<p class="note center" style="margin-top:22px">Mira cómo pasar de buscar videos a tener una rutina a mano:</p><div class="vsl"><video id="vsl" src="/vsl.mp4" poster="/img/vsl_poster.jpg" playsinline preload="metadata"></video><button class="snd" id="snd" type="button" aria-label="Ver cómo funciona Destraba con sonido"><span>▶ VER EL MÉTODO POR DENTRO</span></button></div></div></header>
+<p class="note center" style="margin-top:22px">Mira cómo funciona:</p><div class="vsl"><video id="vsl" src="/vsl.mp4" poster="/img/vsl_poster.jpg" playsinline preload="metadata"></video><button class="snd" id="snd" type="button" aria-label="Ver cómo funciona Destraba con sonido"><span>▶ VER EL MÉTODO POR DENTRO</span></button></div></div></header>
 
 <section class="soft"><div class="w">
-<div class="explore"><span id="exploreText">Deja de posponerlo · Explora 0 de 3</span><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
-<span class="kicker">¿TE SUENA DEMASIADO FAMILIAR?</span>
-<h2>No es solo la molestia. Es la vida que empiezas a recortar.</h2>
-<p class="mut">Te lo piensas antes de agacharte. Cambias de postura una y otra vez. Te cuesta concentrarte cuando la espalda reclama atención. <b>Lo agotador es llegar al día siguiente y volver a lo mismo.</b> Toca lo que reconoces en tu rutina.</p>
+<div class="explore"><span id="exploreText">Explora el método · 0 de 3</span><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+<span class="kicker">¿TE PASA?</span>
+<h2>¿Tu espalda decide por ti?</h2>
+<p class="mut">Levantarte. Agacharte. Trabajar sentado. <b>Cuando todo incomoda, improvisar cansa.</b></p>
 <div class="checks" id="checks">
-<button class="check" type="button" aria-pressed="false"><i aria-hidden="true"></i>Me levanto agarrándome la lumbar y esperando a que el cuerpo responda.</button>
-<button class="check" type="button" aria-pressed="false"><i aria-hidden="true"></i>Acabo el trabajo con el cuello duro y los hombros como una carga.</button>
-<button class="check" type="button" aria-pressed="false"><i aria-hidden="true"></i>Estoy cansado de guardar videos que nunca convierto en una rutina.</button>
+<button class="check" type="button" aria-pressed="false"><i aria-hidden="true"></i>Me levanto despacio y con la lumbar cargada.</button>
+<button class="check" type="button" aria-pressed="false"><i aria-hidden="true"></i>Termino el día con cuello y hombros rígidos.</button>
+<button class="check" type="button" aria-pressed="false"><i aria-hidden="true"></i>Guardo ejercicios, pero no sé por dónde empezar.</button>
 </div>
-<div class="response" id="checkResponse" aria-live="polite">Identifica lo que te frustra. Después, elige un primer paso que sí puedas organizar. La compra siempre está disponible.</div>
-<p class="note" style="margin-top:12px">Esta selección es opcional: no evalúa tu salud, no diagnostica y no condiciona tu compra.</p>
+<div class="response" id="checkResponse" aria-live="polite">Toca una situación para explorar. El cupón está en la oferta.</div>
+<p class="note" style="margin-top:12px">Interacción opcional. No es una evaluación ni un diagnóstico.</p>
 <div class="pain-stories">
   <article class="pain-story">
-    <figure><img src="__DOLOR_LUMBAR__" alt="Imagen ilustrativa de una persona sujetándose la zona lumbar, resaltada en rojo" width="566" height="484" loading="lazy" decoding="async"><figcaption>Imagen ilustrativa de molestias en la zona lumbar; no es un diagnóstico.</figcaption></figure>
-    <div class="pain-story-copy"><span class="eyebrow">CUANDO HASTA LEVANTARTE CUESTA</span><h3>La silla. Los zapatos. Algo en el suelo. Y otra vez esa mano en la lumbar.</h3>
-    <p>Te incorporas despacio. Calculas cómo agacharte. Buscas una postura que te deje concentrarte. <b>Lo frustrante es tener que negociar con tu espalda para hacer cosas tan simples.</b></p>
-    <p>No necesitas acumular otra carpeta de videos guardados. Necesitas saber dónde encontrar una rutina y cómo seguir sus indicaciones, dentro de tus límites.</p></div>
+    <figure><img src="__DOLOR_LUMBAR__" alt="Imagen ilustrativa de una persona sujetándose la zona lumbar, resaltada en rojo" width="566" height="484" loading="lazy" decoding="async"><figcaption>Zona lumbar · Imagen ilustrativa, no diagnóstico.</figcaption></figure>
+    <div class="pain-story-copy"><span class="eyebrow">ZONA LUMBAR</span><h3>Levantarte. Agacharte. Y otra vez esa mano en la espalda.</h3><p>Cuando lo simple cuesta, <b>tener un plan importa.</b></p></div>
   </article>
   <article class="pain-story">
-    <figure><img src="__DOLOR_ESPALDA__" alt="Ilustración de personas sujetándose la espalda con la región lumbar y la columna resaltadas" width="774" height="442" loading="lazy" decoding="async"><figcaption>Representación ilustrativa de la zona de molestia; la imagen no indica su causa.</figcaption></figure>
-    <div class="pain-story-copy"><span class="eyebrow">QUE LA MOLESTIA NO SEA EL CENTRO DE TU DÍA</span><h3>Cansado de cambiar de postura. De distraerte. De terminar el día pendiente de la espalda.</h3>
-    <p>Cuando la rigidez se mete en tu rutina, no solo incomoda: <b>te roba atención, te hace posponer actividades y convierte cada movimiento en algo que piensas de más.</b></p>
-    <p>Deja de improvisar el siguiente paso. En Destraba tienes movimientos organizados por zona y rutinas de 10 minutos para empezar a practicar movilidad en casa. Sin forzar ni perseguir resultados de otra persona.</p></div>
+    <figure><img src="__DOLOR_ESPALDA__" alt="Ilustración de personas sujetándose la espalda con la región lumbar y la columna resaltadas" width="774" height="442" loading="lazy" decoding="async"><figcaption>Espalda · Imagen ilustrativa, no indica la causa.</figcaption></figure>
+    <div class="pain-story-copy"><span class="eyebrow">ESPALDA CARGADA</span><h3>Otra postura. Otra distracción. El mismo cansancio.</h3><p>Deja de buscar videos al azar. <b>Encuentra movimientos por zona.</b></p></div>
   </article>
 </div>
-<p class="quote">No normalices vivir pendiente de cada movimiento. Si no sabes por dónde empezar, busca orientación y empieza con una estructura.</p>
+<p class="quote">Deja de acumular videos. Empieza con una estructura.</p>
 </div></section>
 
 <section><div class="w">
-<div class="eyebrow">Del “a ver si mañana” a un primer paso concreto</div>
-<h2>Seguir improvisando no es un plan. Destraba sí te da una estructura.</h2>
-<p>Cada video suelto te obliga a empezar de cero: buscar, comparar y preguntarte si lo estás haciendo bien. <b>Destraba reúne los movimientos, las demostraciones y las rutinas en una plataforma.</b> Abre el contenido. Sigue las indicaciones. Practica dentro de tus límites.</p>
+<div class="eyebrow">UN PRIMER PASO CLARO</div>
+<h2>Deja de buscar. Encuentra tu rutina.</h2>
+<p><b>Movimientos por zona. Demostraciones. Rutinas listas.</b> Todo organizado para practicar a tu ritmo.</p>
 <img class="photo" src="/img/app_home.jpg" alt="Vista de la plataforma Destraba para encontrar los movimientos por zona" loading="lazy" decoding="async" style="max-height:360px;object-fit:contain;background:var(--soft)">
-<ul class="benefits"><li><b>Encuentra la zona sin perderte:</b> lumbar, cuello, hombros, espalda, cadera, manos o piernas.</li><li><b>Deja de adivinar el movimiento:</b> consulta la demostración y las instrucciones antes de practicar.</li><li><b>Hazle espacio en tu día:</b> rutinas de 10 minutos, en casa y a tu ritmo.</li></ul>
-<p class="quote">Otro “mañana empiezo” no te da una rutina. Reservarte 10 minutos sí te da un punto de partida.</p>
-<a class="btn secondary" href="https://pay.hotmart.com/R108272304D?checkoutMode=10" data-checkout data-pos="solution">QUIERO DEJAR DE BUSCAR Y EMPEZAR<small>US$ 9,90 · Pago único · Acceso inmediato</small></a>
+<ul class="benefits"><li><b>Encuentra tu zona:</b> espalda, cuello, hombros y más.</li><li><b>Mira cómo se hace:</b> demostración e instrucciones.</li><li><b>Reserva 10 minutos:</b> en casa, sin gimnasio.</li></ul>
+
+
 </div></section>
 
 <section class="soft" id="movilidad-en-casa"><div class="w">
   <div class="eyebrow">UN PAGO. TU RUTINA A MANO.</div>
-  <h2>Tu práctica en casa no tiene por qué convertirse en otro gasto recurrente.</h2>
-  <p>¿Te frena pensar en el costo de nuevas sesiones, citas y traslados? <b>Para consultar una rutina de movilidad guiada en Destraba, no pagas una sesión cada vez que abres el contenido.</b></p>
-  <figure class="care-visual"><img src="__QUIROPRAXIA__" alt="Imagen ilustrativa de una mujer recibiendo atención manual de una profesional en una consulta" width="504" height="450" loading="lazy" decoding="async"><figcaption>Imagen ilustrativa de atención presencial. Destraba ofrece contenido educativo para practicar movilidad en casa; no ofrece esta atención ni la sustituye.</figcaption></figure>
-  <div class="home-value"><h3>US$ 9,90 una sola vez. Abre tu rutina desde el celular o la computadora.</h3>
-  <p>Tienes 150 movimientos organizados, 10 rutinas de 10 minutos y el desafío de 7 días. <b>Sin gimnasio, sin una mensualidad y sin pagar de nuevo por cada acceso.</b> Prepara tu espacio, consulta las indicaciones y practica a tu ritmo.</p>
-  <ul class="benefits"><li><b>Tu contenido, donde estés:</b> acceso por celular o computadora.</li><li><b>Una rutina corta:</b> 10 minutos para hacerle espacio a la movilidad en tu día.</li><li><b>Un pago, acceso vitalicio:</b> vuelve a las demostraciones cuando necesites revisarlas.</li></ul>
-  <p class="note">El precio corresponde al acceso educativo, no a un tratamiento ni a una promesa de alivio. Si necesitas una evaluación o atención profesional, este contenido no la reemplaza.</p></div>
-  <a class="btn secondary" href="https://pay.hotmart.com/R108272304D?checkoutMode=10" data-checkout data-pos="home-value">QUIERO MI RUTINA EN CASA POR US$ 9,90<small>Pago único · Acceso vitalicio · Garantía de 7 días</small></a>
+  <h2>Tu rutina no necesita otra mensualidad.</h2>
+  <p><b>Un pago. Acceso vitalicio.</b> Consulta tus rutinas sin pagar de nuevo por cada acceso.</p>
+  <figure class="care-visual"><img src="__QUIROPRAXIA__" alt="Imagen ilustrativa de una mujer recibiendo atención manual de una profesional en una consulta" width="504" height="450" loading="lazy" decoding="async"><figcaption>Atención presencial ilustrativa. Destraba no ofrece ni sustituye este servicio.</figcaption></figure>
+  <div class="home-value"><h3>En tu celular o computadora.</h3>
+  <p>Abre el contenido. Consulta los pasos. Practica dentro de tus límites.</p>
+  <ul class="benefits"><li><b>Celular o computadora.</b></li><li><b>Rutinas de 10 minutos.</b></li><li><b>Un pago. Acceso vitalicio.</b></li></ul>
+  <p class="note">Contenido educativo. No es tratamiento ni sustituye atención profesional.</p></div>
+  
 </div></section>
 
 <section class="soft"><div class="w">
-<span class="kicker">ASÍ DEJAS DE IR A CIEGAS</span>
+<span class="kicker">EXPLORA LA PLATAFORMA</span>
 <h2>Abre. Encuentra. Sigue el movimiento.</h2>
-<p>Sin recorrer una lista interminable de videos. Mira cómo está organizado el contenido que recibirás.</p>
+<p>Toca cada paso para ver qué recibes.</p>
 <div class="tabs" aria-label="Vista previa del contenido">
 <button class="tab" type="button" data-demo="0" aria-pressed="true">1. Encuentra tu zona</button>
 <button class="tab" type="button" data-demo="1" aria-pressed="false">2. Sigue los pasos</button>
@@ -124,74 +171,105 @@ details{padding:15px 0;border-bottom:1px solid var(--line)}summary{font-weight:7
 </div>
 <div class="demo">
 <div class="phone"><img id="demoImg" src="/img/app_home.jpg" alt="Pantalla de inicio de la plataforma con mapa del cuerpo" loading="lazy" decoding="async"></div>
-<div aria-live="polite"><div class="eyebrow" id="demoStep">PASO 1 DE 3</div><h3 id="demoTitle">No pierdas otra tarde buscando.</h3><p id="demoCopy">Entra a la zona que quieres explorar. Los movimientos están organizados para que encontrar el contenido no sea otra frustración.</p></div>
+<div aria-live="polite"><div class="eyebrow" id="demoStep">PASO 1 DE 3</div><h3 id="demoTitle">Tu contenido, por zona.</h3><p id="demoCopy">Elige una zona y consulta sus movimientos.</p></div>
 </div>
 <div class="numbers"><div><b>150</b>ejercicios guiados</div><div><b>10</b>rutinas listas</div><div><b>10 min</b>por rutina</div></div>
+<a class="btn secondary" href="#contenido-incluido" data-nav="deliverables">VER MIS CONTENIDOS ↓</a>
+
 </div></section>
 
 <section><div class="w">
-<span class="kicker">BASTA DE EMPEZAR Y ABANDONAR</span>
-<h2>Dale un lugar a tu movilidad durante los próximos 7 días.</h2>
-<p>No necesitas resolverlo todo hoy. Necesitas un comienzo que puedas seguir. El <b>Desafío de 7 Días incluido</b> acompaña tu inicio. Explora este ejemplo de organización y deja de depender de las ganas del momento.</p>
+<span class="kicker">TU PRIMERA SEMANA</span>
+<h2>Un día a la vez. Un plan para empezar.</h2>
+<p>Incluye el <b>Desafío de 7 Días.</b> Toca un día para explorar un ejemplo de organización.</p>
 <div class="days" aria-label="Explora tu primera semana">
 <button type="button" class="day" data-day="0" aria-pressed="true"><small>DÍA</small>1</button><button type="button" class="day" data-day="1" aria-pressed="false"><small>DÍA</small>2</button><button type="button" class="day" data-day="2" aria-pressed="false"><small>DÍA</small>3</button><button type="button" class="day" data-day="3" aria-pressed="false"><small>DÍA</small>4</button><button type="button" class="day" data-day="4" aria-pressed="false"><small>DÍA</small>5</button><button type="button" class="day" data-day="5" aria-pressed="false"><small>DÍA</small>6</button><button type="button" class="day" data-day="6" aria-pressed="false"><small>DÍA</small>7</button>
 </div>
-<div class="card day-panel" aria-live="polite"><h3 id="dayTitle">Día 1 · Deja de empezar a ciegas</h3><p id="dayCopy">Entra, conoce las zonas y localiza las rutinas. Que tu primer paso sea abrir un plan, no guardar otro video.</p></div>
-<p class="note" style="margin-top:12px">Ejemplo de organización, no una prescripción individual. Los 7 días se refieren al desafío y al inicio del hábito; los resultados y los tiempos varían. Si un movimiento aumenta el dolor, detente y consulta a un profesional.</p>
+<div class="card day-panel" aria-live="polite"><h3 id="dayTitle">Día 1 · Deja de empezar a ciegas</h3><p id="dayCopy">Explora las zonas y encuentra tus rutinas.</p></div>
+<p class="note" style="margin-top:12px">Ejemplo de organización. Los 7 días son la duración del desafío, no una promesa de resultados. Si aumenta el dolor, detente.</p>
 </div></section>
 
-<section class="soft"><div class="w">
-<h2>No te llevas un video suelto. Te llevas una estructura completa.</h2>
+<section class="soft" id="contenido-incluido"><div class="w">
+<h2>Además, llevas estas guías y bonos.</h2>
 <div class="bonus">
-<div><img src="/img/bono_0.jpg" alt="Guía Mapa del Cuerpo y Plan de 4 Semanas" loading="lazy" decoding="async"><b>Mapa del Cuerpo + Plan de 4 Semanas</b><small>Deja de saltar de una idea a otra: organiza tu práctica.</small></div>
-<div><img src="/img/bono_1.jpg" alt="Desafío Destraba 7 Días" loading="lazy" decoding="async"><b>Desafío Destraba 7 Días</b><small>Un checklist para convertir “quiero empezar” en un registro de práctica.</small></div>
-<div><img src="/img/bono_2.jpg" alt="Guía Postura en Home Office" loading="lazy" decoding="async"><b>Postura en Home Office</b><small>Revisa el entorno donde pasas horas con el cuello y los hombros cargados.</small></div>
-<div><img src="/img/bono_3.jpg" alt="Guía Mapa del Dolor" loading="lazy" decoding="async"><b>Mapa del Dolor</b><small>Información educativa para conocer mejor las zonas del cuerpo.</small></div>
+<div><img src="/img/bono_0.jpg" alt="Guía Mapa del Cuerpo y Plan de 4 Semanas" loading="lazy" decoding="async"><b>Mapa del Cuerpo + Plan de 4 Semanas</b><small>Organiza tu práctica.</small></div>
+<div><img src="/img/bono_1.jpg" alt="Desafío Destraba 7 Días" loading="lazy" decoding="async"><b>Desafío Destraba 7 Días</b><small>Incluye checklist.</small></div>
+<div><img src="/img/bono_2.jpg" alt="Guía Postura en Home Office" loading="lazy" decoding="async"><b>Postura en Home Office</b><small>Revisa tus hábitos de trabajo.</small></div>
+<div><img src="/img/bono_3.jpg" alt="Guía Mapa del Dolor" loading="lazy" decoding="async"><b>Mapa del Dolor</b><small>Conoce las zonas del cuerpo.</small></div>
 </div>
-<p class="wa"><b>No te quedes solo con las dudas: acompañamiento por WhatsApp para los primeros 50 alumnos.</b> Esta es la parte limitada de la oferta. El contacto y las instrucciones se entregan tras la compra. No sustituye una evaluación médica.</p>
+<p class="wa"><b>WhatsApp para los primeros 50 alumnos.</b> Recibes las instrucciones después de comprar. No sustituye una evaluación médica.</p>
 </div></section>
 
 <section class="soft" id="historias"><div class="w">
-<div class="eyebrow">Relatos ilustrativos · No son testimonios verificados</div>
-<h2>Tres situaciones. La misma frustración: estar cansado de improvisar.</h2>
-<p>La espalda puede interferir con el trabajo, el tiempo en familia y la forma de moverte. Estos ejemplos narrativos representan esas situaciones.</p>
-<p class="feedback-note"><b>Importante:</b> los nombres, edades y relatos de esta sección son ficticios y fueron creados como ejemplos. Las fotos son ilustrativas y no identifican a esos personajes. No son opiniones de alumnos ni evidencia de resultados del producto.</p>
-<div class="feedbacks"><article class="feedback"><span class="illustrative">RELATO FICTICIO · FOTO ILUSTRATIVA</span><div class="feedback-head"><img src="__FOTO_CARLOS__" alt="Foto ilustrativa; no identifica al personaje ficticio Carlos Mendoza" width="72" height="100" loading="lazy" decoding="async"><div><h3>Carlos Mendoza</h3><p>42 años · México · Personaje ficticio</p></div></div><blockquote>“Llevaba más de 2 años con dolor constante en la zona lumbar. Ya no podía jugar con mis hijos ni trabajar sentado sin sufrir. Empecé el desafío de 7 días y en la primera semana noté una diferencia enorme. El acompañamiento por WhatsApp me dio mucha seguridad.”</blockquote></article><article class="feedback"><span class="illustrative">RELATO FICTICIO · FOTO ILUSTRATIVA</span><div class="feedback-head"><img src="__FOTO_LAURA__" alt="Foto ilustrativa; no identifica al personaje ficticio Laura Fernández" width="72" height="100" loading="lazy" decoding="async"><div><h3>Laura Fernández</h3><p>38 años · Colombia · Personaje ficticio</p></div></div><blockquote>“Trabajo muchas horas frente a la computadora y el cuello y los hombros me estaban matando. Probé de todo y nada me daba resultado real. Con Destraba por fin tengo un plan claro y en 10 minutos al día ya siento menos rigidez. Recomendadísimo.”</blockquote></article><article class="feedback"><span class="illustrative">RELATO FICTICIO · FOTO ILUSTRATIVA</span><div class="feedback-head"><img src="__FOTO_ANDRES__" alt="Foto ilustrativa; no identifica al personaje ficticio Andrés Ramírez" width="72" height="100" loading="lazy" decoding="async"><div><h3>Andrés Ramírez</h3><p>51 años · España · Personaje ficticio</p></div></div><blockquote>“Estaba cansado de pagar sesiones caras de quiropráctica que solo me aliviaban por unos días. Con esta plataforma pude empezar a trabajar mi movilidad desde casa. Lo mejor es que todo está organizado y no tengo que estar buscando videos sueltos.”</blockquote></article></div>
-<p class="note">Los resultados varían. Estos ejemplos no permiten predecir qué sentirás ni en cuánto tiempo.</p>
+<div class="eyebrow">Relatos ilustrativos</div>
+<h2>Tres formas de reconocer la frustración.</h2>
+
+<p class="feedback-note"><b>Ejemplos ficticios, no testimonios de alumnos.</b> Nombres y relatos creados para ilustrar situaciones. Las fotos no identifican a esos personajes ni prueban resultados.</p>
+<div class="feedbacks"><article class="feedback"><span class="illustrative">RELATO FICTICIO · FOTO ILUSTRATIVA</span><div class="feedback-head"><img src="__FOTO_CARLOS__" alt="Foto ilustrativa; no identifica al personaje ficticio Carlos Mendoza" width="72" height="100" loading="lazy" decoding="async"><div><h3>Carlos Mendoza</h3><p>42 años · México · Personaje ficticio</p></div></div><blockquote>“La rigidez lumbar me limitaba al trabajar sentado y jugar con mis hijos. Buscaba un plan claro para empezar en casa.”</blockquote></article><article class="feedback"><span class="illustrative">RELATO FICTICIO · FOTO ILUSTRATIVA</span><div class="feedback-head"><img src="__FOTO_LAURA__" alt="Foto ilustrativa; no identifica al personaje ficticio Laura Fernández" width="72" height="100" loading="lazy" decoding="async"><div><h3>Laura Fernández</h3><p>38 años · Colombia · Personaje ficticio</p></div></div><blockquote>“Paso horas frente a la computadora. Termino con el cuello y los hombros cargados. Necesitaba una rutina que pudiera organizar.”</blockquote></article><article class="feedback"><span class="illustrative">RELATO FICTICIO · FOTO ILUSTRATIVA</span><div class="feedback-head"><img src="__FOTO_ANDRES__" alt="Foto ilustrativa; no identifica al personaje ficticio Andrés Ramírez" width="72" height="100" loading="lazy" decoding="async"><div><h3>Andrés Ramírez</h3><p>51 años · España · Personaje ficticio</p></div></div><blockquote>“Estaba cansado de buscar videos sueltos. Quería movimientos organizados y un contenido que pudiera consultar desde casa.”</blockquote></article></div>
+
+</div></section>
+<section class="soft" id="valor-del-pack"><div class="w">
+<span class="kicker">TODO EN UN SOLO ACCESO</span>
+<h2>Esto es todo lo que llevas.</h2>
+<p>Un paquete completo. Así distribuimos su <b>valor de referencia de US$ 37.</b></p>
+<div class="value-breakdown" aria-label="Desglose ilustrativo del valor de referencia">
+<div class="value-row" data-reference-value="18"><div><h3>Plataforma con 150 movimientos guiados</h3></div><b>US$ 18</b></div>
+<div class="value-row" data-reference-value="8"><div><h3>10 rutinas de 10 minutos</h3></div><b>US$ 8</b></div>
+<div class="value-row" data-reference-value="4"><div><h3>Mapa del Cuerpo + Plan de 4 Semanas</h3></div><b>US$ 4</b></div>
+<div class="value-row" data-reference-value="3"><div><h3>Desafío Destraba de 7 Días</h3></div><b>US$ 3</b></div>
+<div class="value-row" data-reference-value="2"><div><h3>Postura en Home Office</h3></div><b>US$ 2</b></div>
+<div class="value-row" data-reference-value="2"><div><h3>Mapa del Dolor</h3></div><b>US$ 2</b></div>
+<div class="value-row value-support"><div><h3>WhatsApp · primeros 50 alumnos</h3></div><b>Incluido</b></div>
+<div class="value-total"><span>Valor de referencia del paquete</span><strong>US$ 37</strong></div>
+</div>
+<p class="note value-disclosure">Distribución ilustrativa del valor de referencia; no son precios de venta individual. WhatsApp limitado a los primeros 50 alumnos.</p>
+<p class="value-transition"><b>Todo reunido en tu acceso.</b> Activa el cupón y descubre tu precio especial.</p>
 </div></section>
 <section id="oferta"><div class="w">
 <div class="offer">
-<div class="offer-head"><span class="eyebrow" style="margin:0">TOMA UNA DECISIÓN. DA EL PRIMER PASO.</span><span class="pill">Pago único</span></div>
-<h2>¿Otra semana diciendo “tengo que hacer algo con esta espalda”?</h2>
-<p class="mut">Puedes seguir buscando qué hacer cada vez. O tener desde hoy <b>movimientos organizados, rutinas de 10 minutos y el desafío de 7 días</b> en el mismo lugar. El precio es US$ 9,90. El primer paso lo eliges tú.</p>
-<ul class="stack"><li>150 movimientos guiados: encuentra la zona y consulta los pasos.</li><li>10 rutinas de 10 minutos: empieza sin diseñar una sesión desde cero.</li><li>Mapa del Cuerpo + Plan de 4 Semanas.</li><li>3 bonos: Desafío 7 Días, Home Office y Mapa del Dolor.</li><li>Acceso inmediato y vitalicio para volver al contenido cuando lo necesites.</li></ul>
-<div class="limited"><b>WhatsApp: limitado a los primeros 50 alumnos.</b>La limitación corresponde al acompañamiento, no al acceso vitalicio al contenido.</div><div class="price"><span>Antes <s>US$ 37</s></span><b class="amount"><small>US$</small> 9,90</b><span class="save">Ahorras US$ 27,10</span><p class="note" style="margin:0">Descuento aplicado · Un pago · Sin mensualidades</p></div>
-<a class="btn " href="https://pay.hotmart.com/R108272304D?checkoutMode=10" data-checkout data-pos="offer">SÍ, QUIERO EMPEZAR HOY POR US$ 9,90<small>US$ 9,90 · Pago único · Acceso inmediato</small></a>
-<p class="trust">Completa el pago seguro en Hotmart y recibe el acceso por e-mail.</p>
-<div class="seal"><i>7</i><span><b>Garantía de 7 días.</b> Entra y revisa el contenido. Si no es para ti, solicita el reembolso dentro de los 7 días.</span></div>
+<div class="offer-head"><span class="eyebrow" style="margin:0">TU PRECIO ESPECIAL</span><span class="pill">Pago único</span></div>
+<h2>Activa tu cupón. Empieza con un plan.</h2>
+<p>La plataforma, las rutinas y los bonos. <b>Un pago. Acceso vitalicio.</b></p>
+<div class="limited"><b>WhatsApp para los primeros 50 alumnos.</b> El límite corresponde al acompañamiento.</div>
+<div class="price" id="offerPrice" aria-live="polite" aria-atomic="true">
+<span id="priceLabel">Precio normal del paquete</span>
+<b class="amount" id="priceValue">US$ 37</b>
+<span class="save" id="couponSavings" hidden>Ahorras US$ 27,10</span>
+<p class="note" style="margin:10px 0 0">Un pago · Sin mensualidades · Acceso vitalicio</p>
+</div>
+<div class="coupon-panel" id="couponPanel">
+<div class="coupon-heading"><span class="coupon-badge">TU CUPÓN</span><b>DESTRABA</b></div>
+<p id="couponMessage">Activa tu descuento sobre los US$ 37.</p>
+<button class="btn secondary" type="button" id="activateCoupon" aria-controls="offerPrice couponCheckout" aria-expanded="false">ACTIVAR MI CUPÓN ↓</button>
+</div>
+<div id="couponCheckout" hidden>
+<p class="coupon-success" role="status">✓ Cupón activado. Todo el paquete por US$ 9,90.</p>
+<a class="btn" id="buy" href="https://pay.hotmart.com/R108272304D?checkoutMode=10" data-checkout data-pos="offer">SÍ, QUIERO MI ACCESO POR US$ 9,90<small>Pago único · Acceso inmediato y vitalicio</small></a>
+</div>
+<noscript><p class="note">Sin JavaScript, consulta la oferta en Hotmart.</p><a class="nojs-checkout" href="https://pay.hotmart.com/R108272304D?checkoutMode=10">Consultar oferta en Hotmart →</a></noscript>
+<p class="trust">Pago seguro en Hotmart · Instrucciones de acceso por e-mail</p>
+<div class="seal"><i>7</i><span><b>Garantía de 7 días.</b> Si no es para ti, solicita el reembolso dentro de ese plazo.</span></div>
 </div>
 </div></section>
 
 <section class="soft"><div class="w">
-<h2>Resuelve tus dudas. No pospongas la decisión por falta de información.</h2>
+<h2>Tus dudas, resueltas.</h2>
 
-<details><summary>¿Tengo que ver todo el video o completar las interacciones?</summary><p>No. Si ya decidiste empezar, ve directo al pago. Las interacciones y la presentación son opcionales; no bloquean la compra.</p></details>
-<details><summary>¿Me prometen quitar el dolor en 7 días?</summary><p>No. El desafío dura 7 días y te ayuda a organizar el inicio de la práctica. No es una promesa de curación ni un plazo garantizado de mejora. Cada persona tiene necesidades, límites y tiempos distintos.</p></details>
-<details><summary>Estoy cansado de empezar y abandonar. ¿Qué cambia aquí?</summary><p>Tienes el contenido reunido por zonas y 10 rutinas listas de 10 minutos. Eso reduce la búsqueda y la improvisación; la constancia y la elección de movimientos adecuados siguen siendo importantes.</p></details>
-<details><summary>¿Puedo empezar aunque nunca haya hecho ejercicio?</summary><p>Las demostraciones e instrucciones te permiten revisar cada movimiento antes de practicar. No fuerces ni sigas un ejercicio si aumenta el dolor. Si tienes una lesión, síntomas intensos o dudas, consulta antes con un profesional.</p></details>
-<details><summary>¿Voy a necesitar gimnasio o equipos caros?</summary><p>No necesitas gimnasio. Prepara un tapete o una superficie cómoda y espacio suficiente para moverte con seguridad.</p></details>
-<details><summary>¿Cuándo recibo el contenido y cuánto tiempo lo conservo?</summary><p>Una vez confirmado el pago, recibes por e-mail las instrucciones de acceso. El acceso es vitalicio y no tiene mensualidades. El precio de esta oferta es US$ 9,90 en un único pago.</p></details>
-<details><summary>¿Qué es exactamente lo que está limitado a 50 alumnos?</summary><p>El acompañamiento por WhatsApp está limitado a los primeros 50 alumnos, según las condiciones de la oferta. Después de comprar, recibes las instrucciones y el contacto. No equivale a atención de urgencia ni sustituye una evaluación médica.</p></details>
-<details><summary>¿Los relatos con fotos son experiencias reales de alumnos?</summary><p>No. Están identificados como ejemplos ficticios y las fotos son ilustrativas. No los presentamos como evidencia de eficacia ni como resultados reales del producto.</p></details>
-<details><summary>¿Destraba trata una hernia u otra enfermedad?</summary><p>No. Es contenido educativo de movilidad y bienestar. No diagnostica, no trata enfermedades ni reemplaza la atención de un médico o fisioterapeuta.</p></details>
-<details><summary>¿Y si entro y no es para mí?</summary><p>Tienes una garantía de 7 días para revisar el contenido y solicitar el reembolso dentro de ese plazo mediante la plataforma de pago.</p></details>
-<a class="btn " href="https://pay.hotmart.com/R108272304D?checkoutMode=10" data-checkout data-pos="faq">QUIERO MI PLAN PARA EMPEZAR HOY<small>US$ 9,90 · Pago único · Acceso inmediato</small></a>
+
+<details><summary>¿Tengo que completar la página?</summary><p>No. El video y las interacciones son opcionales. Ve a la oferta y activa el cupón para ver el precio y el botón de pago.</p></details>
+<details><summary>¿El dolor desaparece en 7 días?</summary><p>No lo garantizamos. Los 7 días corresponden al desafío. Es contenido educativo, no tratamiento; los resultados varían.</p></details>
+<details><summary>¿Puedo empezar sin experiencia ni gimnasio?</summary><p>Hay demostraciones paso a paso. Necesitas un espacio cómodo. Si un movimiento aumenta el dolor, detente; ante una lesión o dudas, consulta a un profesional.</p></details>
+<details><summary>¿Cómo recibo el acceso?</summary><p>Tras confirmar el pago, recibes las instrucciones por e-mail. Acceso vitalicio, sin mensualidades.</p></details>
+<details><summary>¿Qué está limitado a 50 alumnos?</summary><p>El acompañamiento por WhatsApp. No es atención de urgencia ni sustituye una evaluación médica.</p></details>
+<details><summary>¿Y si no es para mí?</summary><p>Tienes 7 días para revisar el contenido y solicitar el reembolso mediante Hotmart.</p></details>
+<p class="offer-return"><a href="#oferta">Volver a mi cupón ↑</a></p>
+
 </div></section>
-<footer><div class="w">Contenido educativo de movilidad y bienestar. No diagnostica ni trata enfermedades y no sustituye una evaluación médica. Los resultados y los tiempos varían. Ante dolor fuerte, hormigueo o dolor tras una caída o accidente, busca atención profesional. Si un movimiento empeora el dolor, detente. Los relatos ficticios de esta página no constituyen evidencia de resultados. Pago procesado por Hotmart.</div></footer>
-<div class="sticky" id="sticky" hidden><div class="sticky-inner"><span class="sticky-price">Pago único<b>US$ 9,90</b></span><a class="btn" href="https://pay.hotmart.com/R108272304D?checkoutMode=10" data-checkout data-pos="sticky">EMPIEZO HOY →</a></div></div>
+<footer><div class="w">Contenido educativo; no diagnostica, trata enfermedades ni sustituye una evaluación médica. Los resultados varían. Ante dolor fuerte, hormigueo o dolor tras una caída, busca atención profesional. Si un movimiento empeora el dolor, detente. Relatos ficticios, no evidencia de resultados. Pago por Hotmart.</div></footer>
+
 <script>
 const CHECKOUT='https://pay.hotmart.com/R108272304D?checkoutMode=10';
-const VARIANT='directa_dolor_v2';
+const VARIANT='directa_cupon_v3';
 const $=id=>document.getElementById(id);
 const fb=(...args)=>{try{window.fbq&&window.fbq(...args)}catch(e){}};
 function ckUrl(){
@@ -208,6 +286,27 @@ document.querySelectorAll('[data-checkout]').forEach(a=>{
   });
 });
 fb('trackCustom','DirectLandingView',{variant:VARIANT});
+
+// El descuento se revela solo al activar el cupón; no hay caducidad por dispositivo.
+let couponActivated=false;
+$('activateCoupon').addEventListener('click',()=>{
+  if(couponActivated)return;
+  couponActivated=true;
+  $('priceLabel').innerHTML='<s>Antes US$ 37</s> · Con tu cupón';
+  $('priceValue').textContent='US$ 9,90';
+  $('priceValue').classList.add('coupon-price');
+  $('couponSavings').hidden=false;
+  $('couponMessage').textContent='Descuento aplicado. Tu acceso completo está listo.';
+  $('activateCoupon').setAttribute('aria-expanded','true');
+  $('activateCoupon').disabled=true;
+  $('activateCoupon').hidden=true;
+  $('couponCheckout').hidden=false;
+  $('buy').href=ckUrl();
+  fb('trackCustom','CouponActivated',{variant:VARIANT,value:9.9,currency:'USD',discount:27.1});
+  $('buy').focus({preventScroll:true});
+  $('buy').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'nearest'});
+});
+
 // El progreso solo describe contenido explorado, no evalúa la salud ni desbloquea la compra.
 const explored=new Set();
 function markExplore(part){
@@ -222,14 +321,14 @@ document.querySelectorAll('#checks .check').forEach(button=>button.addEventListe
   button.setAttribute('aria-pressed',String(!pressed));
   const count=document.querySelectorAll('#checks .check[aria-pressed="true"]').length;
   $('checkResponse').textContent=count
-    ?'Ya identificaste la frustración. Ahora conoce la estructura: movimientos por zona, rutinas cortas y un punto de partida claro.'
+    ?'Tienes un punto de partida: movimientos por zona y rutinas cortas.'
     :'Identifica lo que te frustra. Después, elige un primer paso que sí puedas organizar. La compra siempre está disponible.';
   markExplore('intro');
 }));
 const demos=[
- {src:'/img/app_home.jpg',alt:'Pantalla de inicio de la plataforma con mapa del cuerpo',title:'No pierdas otra tarde buscando.',copy:'Entra a la zona que quieres explorar. Los movimientos están organizados para que encontrar el contenido no sea otra frustración.'},
- {src:'/img/app_ex.jpg',alt:'Demostración de un ejercicio dentro de la plataforma',title:'Deja de preguntarte cómo se hace.',copy:'Mira la demostración y consulta las instrucciones. Tienes un paso a paso para practicar a tu ritmo, sin forzar.'},
- {src:'/img/app_mat.jpg',alt:'Materiales y bonos disponibles dentro de la plataforma',title:'Tus materiales. Sin búsquedas interminables.',copy:'Abre las guías y los bonos cuando los necesites. Menos material disperso y más claridad para continuar.'}
+ {src:'/img/app_home.jpg',alt:'Pantalla de inicio de la plataforma con mapa del cuerpo',title:'Tu contenido, por zona.',copy:'Elige una zona y consulta sus movimientos.'},
+ {src:'/img/app_ex.jpg',alt:'Demostración de un ejercicio dentro de la plataforma',title:'Mira. Sigue los pasos.',copy:'Consulta la demostración. Practica a tu ritmo, sin forzar.'},
+ {src:'/img/app_mat.jpg',alt:'Materiales y bonos disponibles dentro de la plataforma',title:'Tus materiales, reunidos.',copy:'Abre las guías y los bonos en el mismo lugar.'}
 ];
 document.querySelectorAll('[data-demo]').forEach(button=>button.addEventListener('click',()=>{
   const index=Number(button.dataset.demo),demo=demos[index];
@@ -239,13 +338,13 @@ document.querySelectorAll('[data-demo]').forEach(button=>button.addEventListener
   markExplore('platform');
 }));
 const days=[
- ['Deja de empezar a ciegas','Entra, conoce las zonas y localiza las rutinas. Que tu primer paso sea abrir un plan, no guardar otro video.'],
- ['Hazle espacio. No lo dejes para “cuando pueda”.','Elige un horario realista y prepara tu espacio. Que otros pendientes no decidan siempre por ti.'],
- ['No copies a ciegas. Mira primero.','Consulta la demostración y las indicaciones. Entender el movimiento es más útil que hacerlo deprisa. Respeta tus límites.'],
- ['No vuelvas a la búsqueda interminable.','Vuelve a tu contenido elegido. Ya tienes dónde consultar el siguiente paso; no necesitas empezar otra búsqueda.'],
- ['Mira también cómo pasas el día.','Abre la guía de postura. Revisa el espacio donde trabajas y cómo organizas tus pausas frente a la pantalla.'],
- ['Registra tu práctica. No dependas de la memoria.','Usa el checklist del desafío para llevar un registro. La meta es organizarte, no forzar más movimientos.'],
- ['No dejes tu siguiente paso en el aire.','Revisa tu experiencia y abre el Plan de 4 Semanas. Organiza qué sigue. Si las molestias persisten, busca orientación profesional.']
+ ['Deja de empezar a ciegas','Explora las zonas y encuentra tus rutinas.'],
+ ['Reserva tu momento','Elige un horario realista y prepara tu espacio.'],
+ ['Mira primero','Revisa la demostración. Respeta tus límites.'],
+ ['Dale continuidad','Vuelve al contenido elegido sin empezar otra búsqueda.'],
+ ['Revisa tus hábitos','Consulta la guía de postura y revisa tus pausas.'],
+ ['Usa tu checklist','Registra tu práctica. No se trata de forzar más.'],
+ ['Organiza lo que sigue','Consulta el Plan de 4 Semanas. Si persisten las molestias, busca orientación profesional.']
 ];
 document.querySelectorAll('[data-day]').forEach(button=>button.addEventListener('click',()=>{
   const index=Number(button.dataset.day);
@@ -261,13 +360,7 @@ sound.addEventListener('click',()=>{
 });
 let watched75=false;
 video.addEventListener('timeupdate',()=>{if(!watched75&&video.duration&&video.currentTime/video.duration>=.75){watched75=true;fb('trackCustom','VSL_75_B',{variant:VARIANT})}});
-const sticky=$('sticky'),offer=$('oferta'),firstCta=document.querySelector('[data-pos="hero"]');
-function updateSticky(){
-  const first=firstCta.getBoundingClientRect(),rect=offer.getBoundingClientRect();
-  const show=first.bottom<0&&!(rect.top<innerHeight&&rect.bottom>0);
-  sticky.hidden=!show;sticky.classList.toggle('on',show);
-}
-addEventListener('scroll',updateSticky,{passive:true});addEventListener('resize',updateSticky);updateSticky();
+const offer=$('oferta');
 if('IntersectionObserver' in window){
   const observer=new IntersectionObserver(entries=>{
     if(entries.some(entry=>entry.isIntersecting)){
