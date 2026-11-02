@@ -1,8 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import rawHtml from "../static/pagina.html?raw";
+import landingExtraCss from "../index.css?raw";
 
 
 const html = rawHtml
+  .replaceAll("__LANDING_EXTRA_CSS__", landingExtraCss)
   .replaceAll("__FOTO_CARLOS__", "/img/historia-carlos.png")
   .replaceAll("__FOTO_LAURA__", "/img/historia-laura.png")
   .replaceAll("__FOTO_ANDRES__", "/img/historia-andres.png")
